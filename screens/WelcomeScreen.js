@@ -6,7 +6,6 @@ import {
     Image,
     Button
 } from 'react-native';
-import { StackNavigator } from 'react-navigation'
 
 class WelcomeScreen extends Component {
 

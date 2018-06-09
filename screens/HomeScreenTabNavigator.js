@@ -4,8 +4,8 @@ import {createBottomTabNavigator} from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import ScreenOne from './TabNavigator/ScreenOne';
 import ScreenTwo from './TabNavigator/ScreenTwo';
-
-
+import ScreenThree from './TabNavigator/ScreenThree';
+import Chat from './TabNavigator/Chat';
 export default class AppTabNavigator extends Component {
 
     static navigationOptions = ({ navigation }) => {
@@ -34,6 +34,24 @@ const HomeScreenTabNavigator = new createBottomTabNavigator({
             )
         }
     },
+    ScreenThree: {
+        screen: ScreenThree,
+        navigationOptions: {
+            tabBarLabel: 'Request a meeting',
+            tabBarIcon:() => (
+                <Ionicons name="md-calendar" size={24}/>
+            )
+        }
+    },
+    Chat: {
+        screen: Chat,
+        navigationOptions: {
+            tabBarLabel: 'Chat with us',
+            tabBarIcon:() => (
+                <Ionicons name="md-chatboxes" size={24}/>
+            )
+        }
+    },
     ScreenTwo: {
         screen: ScreenTwo,
         navigationOptions: {
@@ -43,6 +61,7 @@ const HomeScreenTabNavigator = new createBottomTabNavigator({
             )
         }
     }
+   
 })
 
 // export default HomeScreenTabNavigator;

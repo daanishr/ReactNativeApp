@@ -5,7 +5,6 @@ export default class ScreeTwo extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text> ScreenTwo </Text>
         <Button title= 'Log out' onPress={() => 
            this.props.screenProps.navigation.navigate('WelcomeScreen')}/>
       </View>
