@@ -4,7 +4,7 @@ import {createBottomTabNavigator} from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import ScreenOne from './TabNavigator/ScreenOne';
 import ScreenTwo from './TabNavigator/ScreenTwo';
-import ScreenThree from './TabNavigator/ScreenThree';
+import RequestMeeting from './TabNavigator/RequestMeeting';
 import Chat from './TabNavigator/Chat';
 export default class AppTabNavigator extends Component {
 
@@ -34,8 +34,8 @@ const HomeScreenTabNavigator = new createBottomTabNavigator({
             )
         }
     },
-    ScreenThree: {
-        screen: ScreenThree,
+    RequestMeeting: {
+        screen: RequestMeeting,
         navigationOptions: {
             tabBarLabel: 'Request a meeting',
             tabBarIcon:() => (
