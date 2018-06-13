@@ -18,7 +18,7 @@ class LoginScreen extends Component {
         return (
             <View style={styles.container}>
               <Image 
-                  style={{ width:250, height: 200 }}
+                  style={{ width:350, height: 200 }}
               source={require('../img/vision.png')} />
                 <Text>Company Name</Text>
                 <TextInput

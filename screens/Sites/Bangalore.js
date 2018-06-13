@@ -11,19 +11,25 @@ export default class Bangalore extends Component {
             <View style={styles.container}>
 
                 <ScrollView >
-                    <Text style={{ fontSize: 50 }}> Bangalore </Text>
-                    <Image source={require('../../img/Hyder.jpg')} style={{ width: 200, height: 200 }} />
-                    <Text style={{ fontSize: 50 }}>Introduction</Text>
-                    <Text style={{ fontSize: 20 }}>
-                        INTRODUCTION :
-            
-            Allcargo Logistics and Industrial Parks is a part of the erstwhile Allcargo, the leader in integrated logistics services. We offer state-of-art warehousing and industrial real estate solution.
-            
-            With 14 strategically located parks across India already under various stages of development, we aim to take our nationwide warehousing footprint to 15 million sq.ft. by 2020. The purpose is to help clients overcome their warehousing challenges and make the most of our well-planned and easily accessible parks. Our lineage and strengths in asset management and development execution sets us apart. We are well poised to enable our clients minimize their logistics overheads.
-                    </Text>
-                    <Image source={require('../../img/Hyder.jpg')} style={{ width: 200, height: 200 }} />
-                    <Text style={{ fontSize: 90 }}>Master Layout</Text>
-                    <MapView
+                    <Text style={{ paddingTop: 30, fontSize: 20 }}> Bangalore (Malur-Soukya Road)</Text>
+                    <Image source={require('../../img/Hyder.jpg')} style={{
+                        flex: 1,
+                        alignItems: 'center',
+                        justifyContent: 'center', width: 200, height: 200
+                    }} />
+                    <Text style={{ fontSize: 30 }}>Summary</Text>
+                    <Text style={{ fontSize: 20 , padding: 20}}>
+                        • Total Land Area – 100 acres
+
+                        • Type of Usage- Industrial & Warehousing
+
+                        • Total Leasable Area – 2.3 mn sqft
+
+                        • Micro-market – Malur
+
+                        • Location – Near Soukya Malur Road
+                   </Text>
+                   <MapView
                         initialRegion={{
                             latitude: 37.78825,
                             longitude: -122.4324,
@@ -31,10 +37,17 @@ export default class Bangalore extends Component {
                             longitudeDelta: 0.0421,
                         }}
                     />
-                    <Text style={{ fontSize: 80 }}>Warehouse View</Text>
+                   
+                    <Text style={{ fontSize: 30 ,fontWeight: "bold"}}>Project Master Layout</Text>
+                        
+                  
+                    <Text style={{ fontSize: 30, fontWeight: "bold" }}>Aerial View</Text>
+                    <Image source={require('../../img/BangaloreAriel1.png')} style={{ width: 200, height: 200 ,padding:20}} />
+                    <Image source={require('../../img/BangaloreAriel2.png')} style={{ width: 200, height: 200,padding:20 }} />
+                    <Text style={{ fontSize: 30, fontWeight: "bold" }}>Warehouse View</Text>
                     <Image source={require('../../img/Hyder.jpg')} style={{ width: 200, height: 200 }} />
-                    <Text style={{ fontSize: 90 }}>Current work</Text>
-                    <Text style={{ fontSize: 80 }}>React Native</Text>
+                    <Text style={{ fontSize: 30 }}>Current work progress at site</Text>
+                    
                 </ScrollView>
             </View>
         )
