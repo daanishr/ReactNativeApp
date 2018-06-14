@@ -37,17 +37,18 @@ export default class Bangalore extends Component {
                             longitudeDelta: 0.0421,
                         }}
                     />
-                   
                     <Text style={{ fontSize: 30 ,fontWeight: "bold"}}>Project Master Layout</Text>
-                        
-                  
                     <Text style={{ fontSize: 30, fontWeight: "bold" }}>Aerial View</Text>
                     <Image source={require('../../img/BangaloreAriel1.png')} style={{ width: 200, height: 200 ,padding:20}} />
                     <Image source={require('../../img/BangaloreAriel2.png')} style={{ width: 200, height: 200,padding:20 }} />
                     <Text style={{ fontSize: 30, fontWeight: "bold" }}>Warehouse View</Text>
                     <Image source={require('../../img/Hyder.jpg')} style={{ width: 200, height: 200 }} />
                     <Text style={{ fontSize: 30 }}>Current work progress at site</Text>
-                    
+                    <Image source={require('../../img/BangaloreWork1.png')} style={{ width: 200, height: 200 }} />
+                    <Image source={require('../../img/BangaloreWork2.png')} style={{ width: 200, height: 200 }} />
+                    <Image source={require('../../img/BangaloreWork3.png')} style={{ width: 200, height: 200 }} />
+                    <Image source={require('../../img/BangaloreWork4.png')} style={{ width: 200, height: 200 }} />
+                    <Image source={require('../../img/BangaloreWork5.png')} style={{ width: 200, height: 200 }} />
                 </ScrollView>
             </View>
         )

@@ -5,6 +5,7 @@ export default class ScreenOne extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <Image source={require('../../img/closures.png')} style={{ width: 200, height: 200 }} />
          <Text style={{ fontSize: 20, padding: 10 }}>
                         INTRODUCTION :
 

@@ -1,17 +1,25 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View, DatePickerIOS , Button, Alert} from 'react-native'
+import { Text, StyleSheet, View, DatePickerIOS , Platform, Button, Alert} from 'react-native'
+import DatePicker from 'react-native-datepicker'
 import { Calendar, CalendarList, Agenda } from 'react-native-calendars';
 
 export default class RequestMeeting extends Component {
     constructor(props) {
         super(props);
-        this.state = { chosenDate: new Date() };
+        this.state = { 
+          chosenDate: new Date(),
+          date:"2016-05-15" 
+        };
         this.setDate = this.setDate.bind(this);
         //this.openDatePicker = this.openDatePicker.bind(this);
       }
 
   setDate(newDate) {
     this.setState({chosenDate: newDate})
+  }
+
+  dateChosen(){
+    console.log(Platform.OS);
   }
   // openDatePicker(){
   //   try {
@@ -31,7 +39,33 @@ export default class RequestMeeting extends Component {
   render() {
     return (
       <View style={styles.container}>
-   
+        <Button 
+                
+                title="Date" onPress={() => this.props.dateChosen()} />
+            <DatePicker
+        style={{width: 200}}
+        date={this.state.date}
+        mode="date"
+        placeholder="select date"
+        format="YYYY-MM-DD"
+        minDate="2016-05-01"
+        maxDate="2016-06-01"
+        confirmBtnText="Confirm"
+        cancelBtnText="Cancel"
+        customStyles={{
+          dateIcon: {
+            position: 'absolute',
+            left: 0,
+            top: 4,
+            marginLeft: 0
+          },
+          dateInput: {
+            marginLeft: 36
+          }
+          // ... You can check the source to find the other keys.
+        }}
+        onDateChange={(date) => {this.setState({date: date})}}
+      />
         <DatePickerIOS
           date={this.state.chosenDate}
           onDateChange={this.setDate}
