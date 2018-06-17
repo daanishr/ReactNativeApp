@@ -12,30 +12,41 @@ import { StackNavigator } from 'react-navigation'
 class LoginScreen extends Component {
     constructor(props) {
         super(props);
-        this.state = { companyName: 'All Cargo' , email: 'vaishnav@allcargo.com' };
+        this.state = {
+            companyName: 'Name',
+            email: 'email@example.com',
+            text: 'Useless Placeholder'
+        };
     }
+
+
     render() {
         return (
             <View style={styles.container}>
-              <Image 
-                  style={{ width:350, height: 200 }}
-              source={require('../img/vision.png')} />
-                <Text>Company Name</Text>
+                  <Text style={{ fontWeight: "bold",padding: 10 }}>Company Name</Text>
                 <TextInput
-                    style={{ width:150, height: 40, padding: 20, borderColor: 'gray', borderWidth: 0 }}
+                    style={{ height: 40, borderColor: 'white', borderWidth: 1 }}
                     onChangeText={(companyName) => this.setState({ companyName })}
                     value={this.state.companyName}
+               
                 />
-                <Text  style={{ paddingTop: 30}}>Email</Text>
+                <Text style={{ fontWeight: "bold",padding: 10 }}>Email</Text>
+
                 <TextInput
-                    style={{ width:150, padding: 20,paddingBottom: 30, height: 40, borderColor: 'gray', borderWidth: 0 }}
+                    style={{ height: 40, borderColor: 'white', borderWidth: 1 , marginBottom: 20}}
                     onChangeText={(email) => this.setState({ email })}
+                    keyboardType = "email-address"
+                    keyboardAppearance = "dark"
+                    enablesReturnKeyAutomatically = {true}
                     value={this.state.email}
                 />
-                <Button 
-                
-                title="Complete Login" onPress={() => this.props.navigation.navigate
-                    ('DrawerNavigator')} />
+                <Button
+                    title="Complete Login" onPress={() => this.props.navigation.navigate
+                        ('DrawerNavigator')} />
+                <Image
+                    style={{ width: 350, height: 200 }}
+                    source={require('../img/vision.png')} />
+          
             </View>
         );
     }

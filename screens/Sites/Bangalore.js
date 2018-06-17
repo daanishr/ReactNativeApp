@@ -6,11 +6,20 @@ import { List, ListItem } from 'react-native-elements';
 import MapView from 'react-native-maps';
 
 export default class Bangalore extends Component {
+    static navigationOptions = ({ navigation }) => {
+        return {
+            headerLeft: (
+                <View style={{ padding: 10 }}>
+                    <Ionicons name="md-menu" size={24} onPress={() => navigation.openDrawer()} />
+                </View>
+            )
+        }
+    }
     render() {
         return (
             <View style={styles.container}>
 
-                <ScrollView >
+                <ScrollView contentContainerStyle={styles.contentContainer} pinchGestureEnabled={true} >
                     <Text style={{ paddingTop: 30, fontSize: 30, fontWeight:"bold" }}> Bangalore (Malur-Soukya Road)</Text>
                  
                     <Text style={{ fontSize: 30 ,  padding: 15}}>Summary</Text>
@@ -142,5 +151,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
-    }
+    },
+    contentContainer: {
+        padding: 10
+      }
 })

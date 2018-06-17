@@ -9,7 +9,6 @@ import JNPT from './Sites/JNPT';
 import Hyderbad from './Sites/Hyderbad';
 import Pitamphur from './Sites/Pitamphur';
 import Hosur from './Sites/Hosur';
-
 import Farrukhnagar from './Sites/Farrukhnagar';
 import {Container, Content, Body, Icon} from 'native-base';
 
