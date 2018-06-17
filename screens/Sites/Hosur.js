@@ -27,15 +27,18 @@ export default class Hosur extends Component {
                  
 • Google coordinates - 12.6809180, 77.9557630
                    </Text>
-                   <Image source={require('../../img/HosurBuilding.png')} style={{ width: 200, height: 200 }} />
+                   <Image source={require('../../img/HosurBuilding.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
 
                    <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10 }}> Site Location
         </Text>
-        <Image source={require('../../img/HosurMap.png')} style={{ width: 200, height: 200 }} />
+        <Image source={require('../../img/HosurMap.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
 
         <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10 }}> Layout
         </Text>
-        <Image source={require('../../img/HosurLayout.png')} style={{ width: 200, height: 200 }} />
+        <Image source={require('../../img/HosurLayout.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
 
         </ScrollView>
       </View>

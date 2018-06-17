@@ -48,13 +48,19 @@ export default class Hyderbad extends Component {
           <Text style={{ fontSize: 30, fontWeight:"bold", padding: 10 }}>
               Layout
           </Text>
-          <Image source={require('../../img/HydLayout.png')} style={{ width: 300, height: 250, padding: 20 }} />
+          <Image source={require('../../img/HydLayout.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
           <Text style={{ fontSize: 30, fontWeight: "bold"  }}>Current work progress at site</Text>
-          <Image source={require('../../img/HyderWork1.png')} style={{ width: 200, height: 200 }} />
-             <Image source={require('../../img/HyderWork2.png')} style={{ width: 200, height: 200 }} />
-                    <Image source={require('../../img/HyderWork3.png')} style={{ width: 200, height: 200 }} />
-                    <Image source={require('../../img/HyderWork4.png')} style={{ width: 200, height: 200 }} />
-                    <Image source={require('../../img/HyderWork5.png')} style={{ width: 200, height: 200 }} />
+          <Image source={require('../../img/HyderWork1.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
+             <Image source={require('../../img/HyderWork2.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain"/>
+                    <Image source={require('../../img/HyderWork3.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
+                    <Image source={require('../../img/HyderWork4.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain"/>
+                    <Image source={require('../../img/HyderWork5.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain"/>
                         
          
           </ScrollView >

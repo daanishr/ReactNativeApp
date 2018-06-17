@@ -34,13 +34,16 @@ export default class Pitamphur extends Component {
                <Text style={{ fontSize: 20, fontWeight: "bold", padding: 15 }}>
                         Site Location
                </Text>
-               <Image source={require('../../img/PitaMap.png')} style={{ width: 200, height: 200, padding: 20 }} />
+               <Image source={require('../../img/PitaMap.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
 
                <Text style={{ fontSize: 20, fontWeight: "bold", padding: 15 }}>
                         Photos of Site
                </Text>
-               <Image source={require('../../img/PitaPhoto1.png')} style={{ width: 200, height: 200, padding: 20 }} />
-               <Image source={require('../../img/PitaPhoto2.png')} style={{ width: 200, height: 200, padding: 20 }} />
+               <Image source={require('../../img/PitaPhoto1.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
+               <Image source={require('../../img/PitaPhoto2.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain"/>
 
             
           </ScrollView>

@@ -50,7 +50,8 @@ export default class Farrukhnagar extends Component {
                     />
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10 }}>
                         Layout               </Text>
-                    <Image source={require('../../img/FarrLayout2.png')} style={{ width: 200, height: 200, padding: 20 }} />
+                    <Image source={require('../../img/FarrLayout2.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
 
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10 }}>
                         Technical Advanatge:

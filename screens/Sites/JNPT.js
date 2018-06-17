@@ -40,16 +40,20 @@ export default class JNPT extends Component {
                    <Text style={{ fontSize: 30, fontWeight:"bold", padding: 10 }}>
              Map View
           </Text>
-                   <Image source={require('../../img/JNPTMapView.png')} style={{ width: 200, height: 200 }} />
+                   <Image source={require('../../img/JNPTMapView.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
                    <Text style={{ fontSize: 30, fontWeight:"bold", padding: 10 }}>
               Layout of the land
           </Text>
-          <Image source={require('../../img/JNPTLayout.png')} style={{ width: 200, height: 200 }} />
+          <Image source={require('../../img/JNPTLayout.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
           <Text style={{ fontSize: 30, fontWeight:"bold", padding: 10 }}>
              Existing Leased out building:
           </Text>
-          <Image source={require('../../img/JNPTBuilding1.png')} style={{ width: 200, height: 200 }} />
-          <Image source={require('../../img/JNPTBuilding2.png')} style={{ width: 200, height: 200 }} />
+          <Image source={require('../../img/JNPTBuilding1.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
+          <Image source={require('../../img/JNPTBuilding2.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
 
         </ScrollView>
       </View>

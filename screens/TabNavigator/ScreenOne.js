@@ -6,7 +6,8 @@ export default class ScreenOne extends Component {
     return (
       <View style={styles.container}>
         <ScrollView >
-        <Image source={require('../../img/closures.png')} style={{ width: 300, height: 200 , paddingTop:50}} />
+        <Image source={require('../../img/closures.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain"/>
          
         <Text style={{ fontSize: 20, fontWeight:"bold", padding: 10 }}>
             INTRODUCTION :

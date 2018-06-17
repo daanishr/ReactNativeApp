@@ -12,7 +12,7 @@ export default class AppTabNavigator extends Component {
         return {
             headerLeft: (
                 <View style={{ padding: 10 }}>
-                    <Ionicons name="md-menu" size={24} onPress={() => navigation.openDrawer()} />
+                    <Ionicons name="md-menu" size={34} onPress={() => navigation.openDrawer()} />
                 </View>
             )
         }

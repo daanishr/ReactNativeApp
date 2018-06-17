@@ -76,7 +76,8 @@ export default class Bangalore extends Component {
                     <Text style={{ fontSize: 20, fontWeight: "bold" }}>Project Master Layout
                  
                     </Text>
-                    <Image source={require('../../img/LayoutBang.png')} style={{ width: 250, height: 200, padding: 20 }} />
+                    <Image source={require('../../img/LayoutBang.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
 
                     <Text style={{ fontSize: 20, padding:10}}>Project Master Layout
                     Total Development – 2.3 Million sft. Area – 100 Acres
@@ -129,16 +130,24 @@ export default class Bangalore extends Component {
                    </Text>
 
                     <Text style={{ fontSize: 30, fontWeight: "bold" }}>Aerial View</Text>
-                    <Image source={require('../../img/BangaloreAriel1.png')} style={{ width: 200, height: 200, padding: 20 }} />
-                    <Image source={require('../../img/BangaloreAriel2.png')} style={{ width: 200, height: 200, padding: 20 }} />
+                    <Image source={require('../../img/BangaloreAriel1.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
+                    <Image source={require('../../img/BangaloreAriel2.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
                     <Text style={{ fontSize: 30, fontWeight: "bold" }}>Warehouse View</Text>
-                    <Image source={require('../../img/Hyder.jpg')} style={{ width: 200, height: 200 }} />
+                    <Image source={require('../../img/Hyder.jpg')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
                     <Text style={{ fontSize: 30, fontWeight: "bold"  }}>Current work progress at site</Text>
-                    <Image source={require('../../img/BangaloreWork1.png')} style={{ width: 200, height: 200 }} />
-                    <Image source={require('../../img/BangaloreWork2.png')} style={{ width: 200, height: 200 }} />
-                    <Image source={require('../../img/BangaloreWork3.png')} style={{ width: 200, height: 200 }} />
-                    <Image source={require('../../img/BangaloreWork4.png')} style={{ width: 200, height: 200 }} />
-                    <Image source={require('../../img/BangaloreWork5.png')} style={{ width: 200, height: 200 }} />
+                    <Image source={require('../../img/BangaloreWork1.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
+                    <Image source={require('../../img/BangaloreWork2.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
+                    <Image source={require('../../img/BangaloreWork3.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
+                    <Image source={require('../../img/BangaloreWork4.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
+                    <Image source={require('../../img/BangaloreWork5.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
                 </ScrollView>
             </View>
         )
