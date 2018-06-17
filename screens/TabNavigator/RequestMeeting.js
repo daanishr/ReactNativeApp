@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, DatePickerIOS , Platform, Button, Alert} from 'react-native'
-import DatePicker from 'react-native-datepicker'
+// import DatePicker from 'react-native-datepicker'
 import { Calendar, CalendarList, Agenda } from 'react-native-calendars';
 
 export default class RequestMeeting extends Component {
@@ -39,7 +39,7 @@ export default class RequestMeeting extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Button 
+        {/* <Button 
                 
                 title="Date" onPress={() => this.props.dateChosen()} />
             <DatePicker
@@ -65,7 +65,7 @@ export default class RequestMeeting extends Component {
           // ... You can check the source to find the other keys.
         }}
         onDateChange={(date) => {this.setState({date: date})}}
-      />
+      /> */}
         <DatePickerIOS
           date={this.state.chosenDate}
           onDateChange={this.setDate}
