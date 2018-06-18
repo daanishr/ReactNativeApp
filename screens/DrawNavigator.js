@@ -23,7 +23,12 @@ const AppDrawerNavigator = new createDrawerNavigator({
         screen: InnerStackNavigator 
     },
     Bangalore: { 
-        screen: Bangalore 
+        screen: Bangalore ,
+        navigationOptions: {
+            header: {
+                visible: true
+            }
+        }
     },
     Hyderbad: { 
         screen: Hyderbad 

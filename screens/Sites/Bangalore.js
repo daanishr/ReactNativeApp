@@ -1,24 +1,37 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View, FlatList, Image, ScrollView } from 'react-native'
+import { Text, StyleSheet, View, FlatList, Image, ScrollView , Button} from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { Header, Left, Icon } from 'native-base';
 import { List, ListItem } from 'react-native-elements';
 import MapView from 'react-native-maps';
 
 export default class Bangalore extends Component {
+
     static navigationOptions = ({ navigation }) => {
+        
         return {
             headerLeft: (
                 <View style={{ padding: 10 }}>
-                    <Ionicons name="md-menu" size={24} onPress={() => navigation.openDrawer()} />
+                    <Ionicons name="md-menu" size={34} onPress={() => navigation.openDrawer()} />
                 </View>
             )
         }
     }
+    static navigationOptions = {
+        headerMode: "float"
+      };
     render() {
         return (
             <View style={styles.container}>
-
+                
+                <MapView
+                        initialRegion={{
+                            latitude: 37.78825,
+                            longitude: -122.4324,
+                            latitudeDelta: 0.0922,
+                            longitudeDelta: 0.0421,
+                        }}
+                    />
                 <ScrollView contentContainerStyle={styles.contentContainer} pinchGestureEnabled={true} >
                     <Text style={{ paddingTop: 30, fontSize: 30, fontWeight:"bold" }}> Bangalore (Malur-Soukya Road)</Text>
                  
@@ -45,14 +58,7 @@ export default class Bangalore extends Component {
                    From our industrial park in Malur, the City of Bangalore is located at 35 kilometres    and  Kempegowda International Airport is at 40 kilometres. With main access of 80 ft wide road, we are situated at close proximity to various industrial clusters of    Bengaluru like Hosakote, Narasapura, Bommanahalli, etc. It takes less than an hour       to reach either destination. Our warehouses are so serene that they not only provide     a locational advantage but also give a good real estate valuation in the coming future. 
 
                    </Text>
-                    <MapView
-                        initialRegion={{
-                            latitude: 37.78825,
-                            longitude: -122.4324,
-                            latitudeDelta: 0.0922,
-                            longitudeDelta: 0.0421,
-                        }}
-                    />
+                   
                      <Text style={{ fontSize: 20, fontWeight:"bold", padding: 10 }}>
                      TECHNICAL ADVANTAGE :
 

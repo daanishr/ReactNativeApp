@@ -4,12 +4,19 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import MapView from 'react-native-maps';
 
 export default class Farrukhnagar extends Component {
+
+    static navigationOptions = {
+        title: "NCR",
+        header: {
+            visible: true
+        }
+      };
     render() {
         return (
             <View style={styles.container}>
                 <ScrollView>
                     <Text style={{ fontSize: 40, fontWeight: "bold", paddingTop: 30 }}>
-                        Farrukhnagar Site
+                        NCR (Farrukhnagar)   Site
                </Text>
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 15 }}>
                         Summary
@@ -48,6 +55,10 @@ export default class Farrukhnagar extends Component {
                             longitudeDelta: 0.0421,
                         }}
                     />
+                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10 }}>
+                        Ariel View               </Text>
+                    <Image source={require('../../img/NCRAriel.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10 }}>
                         Layout               </Text>
                     <Image source={require('../../img/FarrLayout2.png')} style={{   alignSelf: 'center', height: 250,

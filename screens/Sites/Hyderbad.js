@@ -46,6 +46,14 @@ export default class Hyderbad extends Component {
 
           </Text>
           <Text style={{ fontSize: 30, fontWeight:"bold", padding: 10 }}>
+              Ariel View
+          </Text>
+          <Image source={require('../../img/HyderAriel1.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
+          <Text style={{ fontSize: 30, fontWeight: "bold"  }}>Current work progress at site</Text>
+          <Image source={require('../../img/HyderAriel2.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
+          <Text style={{ fontSize: 30, fontWeight:"bold", padding: 10 }}>
               Layout
           </Text>
           <Image source={require('../../img/HydLayout.png')} style={{   alignSelf: 'center', height: 250,

@@ -47,6 +47,14 @@ export default class JNPT extends Component {
           </Text>
           <Image source={require('../../img/JNPTLayout.png')} style={{   alignSelf: 'center', height: 250,
     width: 300,}}   resizeMode="contain" />
+    <Text style={{ fontSize: 30, fontWeight:"bold", padding: 10 }}>
+              Ariel View
+          </Text>
+          <Image source={require('../../img/JNPTAriel1.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
+          <Image source={require('../../img/JNPTAriel2.png')} style={{   alignSelf: 'center', height: 250,
+    width: 300,}}   resizeMode="contain" />
+
           <Text style={{ fontSize: 30, fontWeight:"bold", padding: 10 }}>
              Existing Leased out building:
           </Text>
