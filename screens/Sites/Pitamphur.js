@@ -35,15 +35,21 @@ export default class Pitamphur extends Component {
                         Site Location
                </Text>
                <Image source={require('../../img/PitaMap.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
 
                <Text style={{ fontSize: 20, fontWeight: "bold", padding: 15, color:"red" }}>
                         Current work
                </Text>
                <Image source={require('../../img/PitaPhoto1.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
                <Image source={require('../../img/PitaPhoto2.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain"/>
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
 
             
           </ScrollView>

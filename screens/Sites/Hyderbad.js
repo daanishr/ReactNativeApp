@@ -62,44 +62,78 @@ export default class Hyderbad extends Component {
               Ariel View
           </Text>
           <Image source={require('../../img/HyderAriel1.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
           <Text style={{ fontSize: 30, fontWeight: "bold"  , color:"red"}}>Current work progress at site</Text>
           <Image source={require('../../img/HyderAriel2.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
           <Text style={{ fontSize: 30, fontWeight:"bold", padding: 10 , color:"red"}}>
               Layout
           </Text>
           <Image source={require('../../img/HydLayout.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
           <Text style={{ fontSize: 30, fontWeight: "bold" , color:"red" }}>Current work progress at site</Text>
           <Image source={require('../../img/file1.jpeg')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
              <Image source={require('../../img/file2.jpeg')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain"/>
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
                     <Image source={require('../../img/file3.jpeg')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
                     <Image source={require('../../img/file4.jpeg')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain"/>
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
                     <Image source={require('../../img/file5.jpeg')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain"/>
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
        <Image source={require('../../img/file6.jpeg')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain"/>
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
        <Image source={require('../../img/file7.jpeg')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain"/>
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
        <Image source={require('../../img/file8.jpeg')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain"/>
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
        <Image source={require('../../img/file9.jpeg')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain"/>
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
        <Image source={require('../../img/file10.jpeg')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain"/>
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
        <Image source={require('../../img/file11.jpeg')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain"/>
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
        <Image source={require('../../img/file12.jpeg')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain"/>
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
        <Image source={require('../../img/file13.jpeg')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain"/>
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
        <Image source={require('../../img/file14.jpeg')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain"/>
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
                         
          
           </ScrollView >

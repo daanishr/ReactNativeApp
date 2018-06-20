@@ -9,6 +9,7 @@ import JNPT from './Sites/JNPT';
 import Hyderbad from './Sites/Hyderbad';
 import Pitamphur from './Sites/Pitamphur';
 import Hosur from './Sites/Hosur';
+import Goa from './Sites/Goa';
 import Farrukhnagar from './Sites/Farrukhnagar';
 import {Container, Content, Body, Icon} from 'native-base';
 
@@ -41,6 +42,9 @@ const AppDrawerNavigator = new createDrawerNavigator({
         },
     Hosur: {
         screen: Hosur
+    },
+    Goa: {
+        screen: Goa
     },
     Pitamphur: {
          screen: Pitamphur 

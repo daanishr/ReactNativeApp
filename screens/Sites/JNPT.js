@@ -41,27 +41,39 @@ export default class JNPT extends Component {
              Map View
           </Text>
                    <Image source={require('../../img/JNPTMapView.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
                    <Text style={{ fontSize: 30, fontWeight:"bold", padding: 10, color:"red" }}>
               Layout of the land
           </Text>
           <Image source={require('../../img/JNPTLayout.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
     <Text style={{ fontSize: 30, fontWeight:"bold", padding: 10, color:"red" }}>
               Ariel View
           </Text>
           <Image source={require('../../img/JNPTAriel1.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
           <Image source={require('../../img/JNPTAriel2.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
 
           <Text style={{ fontSize: 30, fontWeight:"bold", padding: 10 , color:"red"}}>
              Existing Leased out building:
           </Text>
           <Image source={require('../../img/JNPTBuilding1.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
           <Image source={require('../../img/JNPTBuilding2.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
 
         </ScrollView>
       </View>

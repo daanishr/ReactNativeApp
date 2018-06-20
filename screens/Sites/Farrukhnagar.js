@@ -42,10 +42,8 @@ export default class Farrukhnagar extends Component {
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 15 , color:"red"}}>
                         Location Advanatge:
                </Text>
-
                     <Text style={{ fontSize: 20, padding: 10 , color:"white"}}>
                         The park covers an area of 185 acres in total with 40 lac sqft of built-up area. The location of the park is on Gurgaon-Jhajjar Road, 4.4 km from Farrukhnagar and 26 km from Gurgaon and is ideally located for the distribution in the northern region of India. There are a number of large industrial areas in close proximity to the site and enjoys seamless connectivity to the neighboring states of Uttar Pradesh, Himachal-Pradesh, Punjab and Rajasthan.
- 
                </Text>
                     <MapView
                         initialRegion={{
@@ -58,12 +56,15 @@ export default class Farrukhnagar extends Component {
                      <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color:"red" }}>
                         Ariel View               </Text>
                     <Image source={require('../../img/NCRAriel.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10 , color:"red" }}>
                         Layout               </Text>
                     <Image source={require('../../img/FarrLayout2.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
-
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10 , color:"red"}}>
                         Technical Advanatge:
                </Text>
@@ -85,8 +86,6 @@ export default class Farrukhnagar extends Component {
                         •	Fire hydrants, hose reels and system as per NBC norms. Sprinkler system provision as per customers requirement
          
                </Text>
-
-
                 </ScrollView>
             </View>
         )

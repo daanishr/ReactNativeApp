@@ -15,13 +15,11 @@ export default class AppTabNavigator extends Component {
                 elevation: null
             },
             title: "All Cargo Logistics",
-           
             headerLeft: (
                 <View style={{ padding: 10 }}>
                     <Ionicons name="md-menu" size={34} onPress={() => navigation.openDrawer()} />
                 </View>
             )
-            
         }
     }
     render() {
@@ -47,15 +45,6 @@ const HomeScreenTabNavigator = new createBottomTabNavigator({
             tabBarLabel: 'Request a meeting',
             tabBarIcon:() => (
                 <Ionicons name="md-calendar" size={24}/>
-            )
-        }
-    },
-    Chat: {
-        screen: Chat,
-        navigationOptions: {
-            tabBarLabel: 'Chat with us',
-            tabBarIcon:() => (
-                <Ionicons name="md-chatboxes" size={24}/>
             )
         }
     },

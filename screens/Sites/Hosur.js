@@ -28,17 +28,23 @@ export default class Hosur extends Component {
 • Google coordinates - 12.6809180, 77.9557630
                    </Text>
                    <Image source={require('../../img/HosurBuilding.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
 
                    <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10 , color:"red"}}> Site Location
         </Text>
         <Image source={require('../../img/HosurMap.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
 
         <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10 , color:"red"}}> Layout
         </Text>
         <Image source={require('../../img/HosurLayout.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain"
+    defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    />
 
         </ScrollView>
       </View>

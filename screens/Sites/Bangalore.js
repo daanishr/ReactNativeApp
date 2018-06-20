@@ -7,23 +7,21 @@ import MapView from 'react-native-maps';
 
 export default class Bangalore extends Component {
 
-    static navigationOptions = ({ navigation }) => {
-        
-        return {
-            headerLeft: (
-                <View style={{ padding: 10 }}>
-                    <Ionicons name="md-menu" size={34} onPress={() => navigation.openDrawer()} />
-                </View>
-            )
-        }
+    constructor(props) {
+        super(props);
+        this.state = {
+            loading: false
+        };
     }
-    static navigationOptions = {
-        headerMode: "float"
-      };
+
+ 
     render() {
         return (
             <View style={styles.container}>
-                
+                  {this.state.loading ? <View style={[styles.container, styles.horizontal]}>
+                      <ActivityIndicator size="large" color="red" />
+                 </View>: null
+            }
                 <MapView
                         initialRegion={{
                             latitude: 37.78825,
@@ -32,9 +30,8 @@ export default class Bangalore extends Component {
                             longitudeDelta: 0.0421,
                         }}
                     />
-                <ScrollView contentContainerStyle={styles.contentContainer} pinchGestureEnabled={true} >
+                <ScrollView contentContainerStyle={styles.contentContainer} pinchGestureEnabled={true} maximumZoomScale={2} >
                     <Text style={{ paddingTop: 30, fontSize: 30, fontWeight:"bold", color:"white" }}> Bangalore (Malur-Soukya Road)</Text>
-                 
                     <Text style={{ fontSize: 30 ,  padding: 15, color: "red"}}>Summary</Text>
                     <Text style={{ fontSize: 20, padding: 10 , color: "white"}}>
                         • Total Land Area – 100 acres
@@ -51,6 +48,23 @@ export default class Bangalore extends Component {
                     <Text style={{ fontSize: 20, padding: 10 , color: "white"}}>
                         • Location – Near Soukya Malur Road
                    </Text>
+
+                    <Text style={{ fontSize: 30, fontWeight: "bold" , color: "red"}}>Aerial View</Text>
+                    <Image source={require('../../img/BangaloreAriel1.png')} style={{   alignSelf: 'center', height: 250,
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={require('../../img/Loading.png')}
+    onLoadStart={(e) => this.setState({loading: true})}
+    onLoadEnd={(e) => this.setState({loading: false})}
+    />
+                    <Image source={require('../../img/BangaloreAriel2.png')} style={{   alignSelf: 'center', height: 250,
+    width: Dimensions.get('window').width} }  resizeMode="contain" 
+    defaultSource={require('../../img/Loading.png')}
+    />
+                    <Text style={{ fontSize: 30, fontWeight: "bold" , color: "red"}}>Warehouse View</Text>
+                    <Image source={require('../../img/Hyder.jpg')} style={{   alignSelf: 'center', height: 250,
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={require('../../img/Loading.png')}
+    />
                    <Text style={{ fontSize: 20, fontWeight:"bold", padding: 10 , color: "red"}}>
                          Location Advantage 
                    </Text>
@@ -83,7 +97,9 @@ export default class Bangalore extends Component {
                  
                     </Text>
                     <Image source={require('../../img/LayoutBang.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={require('../../img/Loading.png')}
+    />
 
                     <Text style={{ fontSize: 20, padding:10 , color: "white"}}>Project Master Layout
                     Total Development – 2.3 Million sft. Area – 100 Acres
@@ -135,25 +151,27 @@ export default class Bangalore extends Component {
                    • Proper Signages
                    </Text>
 
-                    <Text style={{ fontSize: 30, fontWeight: "bold" , color: "red"}}>Aerial View</Text>
-                    <Image source={require('../../img/BangaloreAriel1.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
-                    <Image source={require('../../img/BangaloreAriel2.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width} }  resizeMode="contain" />
-                    <Text style={{ fontSize: 30, fontWeight: "bold" , color: "red"}}>Warehouse View</Text>
-                    <Image source={require('../../img/Hyder.jpg')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
                     <Text style={{ fontSize: 30, fontWeight: "bold"  , color: "red"}}>Current work progress at site</Text>
                     <Image source={require('../../img/BangaloreWork1.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={require('../../img/Loading.png')}
+    />
                     <Image source={require('../../img/BangaloreWork2.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={require('../../img/Loading.png')}
+    />
                     <Image source={require('../../img/BangaloreWork3.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={require('../../img/Loading.png')}
+    />
                     <Image source={require('../../img/BangaloreWork4.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={require('../../img/Loading.png')}
+    />
                     <Image source={require('../../img/BangaloreWork5.png')} style={{   alignSelf: 'center', height: 250,
-    width: Dimensions.get('window').width}}   resizeMode="contain" />
+    width: Dimensions.get('window').width}}   resizeMode="contain" 
+    defaultSource={require('../../img/Loading.png')}
+    />
                 </ScrollView>
             </View>
         )
