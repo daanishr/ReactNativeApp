@@ -4,7 +4,7 @@
    "name": "All Cargo Warehouse",
    "icon": "./img/logo/android/playstore-icon.png",
    "version": "0.0.1",
-   "slug": "@expo.io/@daanishrallcargo/allcargo",
+   "slug": "expo.io/@daanishrallcargo/allcargo",
    "sdkVersion": "27.0.0",
    "description": "All cargo warehouse show app",
    "ios": {
