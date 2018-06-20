@@ -10,11 +10,18 @@ export default class AppTabNavigator extends Component {
 
     static navigationOptions = ({ navigation }) => {
         return {
+            headerStyle: {
+                backgroundColor: 'white', 
+                elevation: null
+            },
+            title: "All Cargo Logistics",
+           
             headerLeft: (
                 <View style={{ padding: 10 }}>
                     <Ionicons name="md-menu" size={34} onPress={() => navigation.openDrawer()} />
                 </View>
             )
+            
         }
     }
     render() {

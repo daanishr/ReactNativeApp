@@ -4,7 +4,8 @@ import {
     Text,
     View,
     Image,
-    Button
+    Button,
+    Dimensions
 } from 'react-native';
 
 class WelcomeScreen extends Component {
@@ -16,7 +17,10 @@ class WelcomeScreen extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Image source={require('../img/allcargo-logo3130-343x220.jpg')} />
+                <Image resizeMode="contain" style={{   alignSelf: 'center',width: Dimensions.get('window').width-100,
+height: 100}}   source={require('../img/Logo.png')} />
+  <Image resizeMode="contain" style={{   alignSelf: 'center',width: Dimensions.get('window').width-100,
+height: 100, paddingBottom:50}}   source={require('../img/Logo2.png')} />
                 <Button title="Log in" onPress={() => this.props.navigation.navigate
                     ('LoginScreen')} />
             </View>
@@ -29,8 +33,8 @@ export default WelcomeScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#151313',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'center'
     },
 });

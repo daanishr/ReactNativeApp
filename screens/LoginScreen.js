@@ -5,9 +5,15 @@ import {
     View,
     TextInput,
     Image,
-    Button
+    Button,
+    Alert,
+    Dimensions
 } from 'react-native';
+import * as firebase from 'firebase';
+import uuidv1 from 'uuid/v1';
 import { StackNavigator } from 'react-navigation'
+
+
 
 class LoginScreen extends Component {
     constructor(props) {
@@ -19,48 +25,65 @@ class LoginScreen extends Component {
             mobile: ''
         };
     }
-    login(){
-        
+
+  
+    login() {
+        if (this.state.companyName != '' && this.state.email != '') {
+            firebase.database().ref('user/'+uuidv1()).set({
+                name:this.state.companyName,
+                email:this.state.email,
+                phone: this.state.mobile
+            }).then(() => {
+                this.props.navigation.navigate('DrawerNavigator');
+            }).catch((error)=> {
+                Alert.alert(error);
+            });
+           
+        } else {
+            Alert.alert("Please enter company name and email");
+        }
+
     }
 
     render() {
         return (
             <View style={styles.container}>
-                
+
                 <TextInput
-                    style={{ height: 40, width: 100, borderColor: 'white', borderWidth: 1 ,marginBottom: 20}}
+                    style={{ height: 40, width: 170, borderColor: 'black', padding: 10, color: "white", borderWidth: 1, marginBottom: 20 }}
                     onChangeText={(companyName) => this.setState({ companyName })}
                     value={this.state.companyName}
-                    placeholder="Company Name"
+                    placeholder="Enter Company Name"
                 />
 
 
                 <TextInput
-                    style={{ height: 40, width: 100, borderColor: 'white', borderWidth: 1 , marginBottom: 20}}
+                    style={{ height: 40, width: 170, borderColor: 'black', padding: 10, color: "white", borderWidth: 1, marginBottom: 20 }}
                     onChangeText={(email) => this.setState({ email })}
-                    keyboardType = "email-address"
-                    keyboardAppearance = "dark"
-                    enablesReturnKeyAutomatically = {true}
+                    keyboardType="email-address"
+                    keyboardAppearance="dark"
+                    enablesReturnKeyAutomatically={true}
                     value={this.state.email}
-                    placeholder="Email Address"
+                    placeholder="Enter Email Address"
                 />
-       
 
-        <TextInput
-    style={{ height: 40, width: 100, borderColor: 'white', borderWidth: 1 , marginBottom: 20}}
-    onChangeText={(mobile) => this.setState({ mobile })}
-    keyboardType = "phone-pad"
-    enablesReturnKeyAutomatically = {true}
-    value={this.state.mobile}
-    placeholder="Mobile Number"
-/>
+
+                <TextInput
+                    style={{ height: 40, width: 150, borderColor: 'black', padding: 10, color: "white", borderWidth: 1, marginBottom: 20 }}
+                    onChangeText={(mobile) => this.setState({ mobile })}
+                    keyboardType="phone-pad"
+                    enablesReturnKeyAutomatically={true}
+                    value={this.state.mobile}
+                    placeholder="Enter Mobile No"
+                />
                 <Button
-                    title="Complete Login" onPress={() => this.props.navigation.navigate
-                        ('DrawerNavigator')} />
-                <Image
-                    style={{ width: 350, height: 200 }}
-                    source={require('../img/vision.png')} />
-          
+                    title="Complete Login" onPress={() => this.login()} />
+                <Image resizeMode="contain" style={{
+                    alignSelf: 'center', width: Dimensions.get('window').width - 100,
+                    height: 100, margin:20
+                }} source={require('../img/Logo.png')} />
+  
+
             </View>
         );
     }
@@ -71,7 +94,7 @@ export default LoginScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#000',
         alignItems: 'center',
         justifyContent: 'center',
     },
