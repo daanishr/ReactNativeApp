@@ -35,7 +35,7 @@ const HomeScreenTabNavigator = new createBottomTabNavigator({
         navigationOptions: {
             tabBarLabel: 'Home',
             tabBarIcon:() => (
-                <Ionicons name="md-home" size={24}/>
+                <Ionicons name="md-home" size={32}/>
             )
         }
     },
@@ -44,7 +44,7 @@ const HomeScreenTabNavigator = new createBottomTabNavigator({
         navigationOptions: {
             tabBarLabel: 'Request a meeting',
             tabBarIcon:() => (
-                <Ionicons name="md-calendar" size={24}/>
+                <Ionicons name="md-calendar" size={32}/>
             )
         }
     },
@@ -53,7 +53,7 @@ const HomeScreenTabNavigator = new createBottomTabNavigator({
         navigationOptions: {
             tabBarLabel: 'Log Out',
             tabBarIcon:() => (
-                <Ionicons name="md-log-out" size={24}/>
+                <Ionicons name="md-log-out" size={32}/>
             )
         }
     }

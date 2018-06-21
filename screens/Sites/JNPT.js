@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View, ScrollView, Image , Dimensions} from 'react-native'
+import { Text, StyleSheet, View, ScrollView , Dimensions} from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
-
+import Image from 'react-native-image-progress';
+import Progress from 'react-native-progress';
 export default class JNPT extends Component {
   render() {
     return (
@@ -40,39 +41,81 @@ export default class JNPT extends Component {
                    <Text style={{ fontSize: 30, fontWeight:"bold", padding: 10 , color:"red"}}>
              Map View
           </Text>
-                   <Image source={require('../../img/JNPTMapView.png')} style={{   alignSelf: 'center', height: 250,
+                   <Image source={require('../../img/jnptmapview.jpg')} style={{   alignSelf: 'center', height: 250,
     width: Dimensions.get('window').width}}   resizeMode="contain" 
     defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    indicator={Progress.Pie}
+    indicatorProps={{
+      size: 80,
+      borderWidth: 0,
+      color: 'rgba(150, 150, 150, 1)',
+      unfilledColor: 'rgba(200, 200, 200, 0.2)'
+    }}
     />
                    <Text style={{ fontSize: 30, fontWeight:"bold", padding: 10, color:"red" }}>
               Layout of the land
           </Text>
-          <Image source={require('../../img/JNPTLayout.png')} style={{   alignSelf: 'center', height: 250,
+          <Image source={require('../../img/jnptlayout.jpg')} style={{   alignSelf: 'center', height: 250,
     width: Dimensions.get('window').width}}   resizeMode="contain" 
     defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    indicator={Progress.Pie}
+    indicatorProps={{
+      size: 80,
+      borderWidth: 0,
+      color: 'rgba(150, 150, 150, 1)',
+      unfilledColor: 'rgba(200, 200, 200, 0.2)'
+    }}
     />
     <Text style={{ fontSize: 30, fontWeight:"bold", padding: 10, color:"red" }}>
               Ariel View
           </Text>
-          <Image source={require('../../img/JNPTAriel1.png')} style={{   alignSelf: 'center', height: 250,
+          <Image source={require('../../img/jnptariel1.jpg')} style={{   alignSelf: 'center', height: 250,
     width: Dimensions.get('window').width}}   resizeMode="contain" 
     defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    indicator={Progress.Pie}
+    indicatorProps={{
+      size: 80,
+      borderWidth: 0,
+      color: 'rgba(150, 150, 150, 1)',
+      unfilledColor: 'rgba(200, 200, 200, 0.2)'
+    }}
     />
-          <Image source={require('../../img/JNPTAriel2.png')} style={{   alignSelf: 'center', height: 250,
+          <Image source={require('../../img/jnptariel2.jpg')} style={{   alignSelf: 'center', height: 250,
     width: Dimensions.get('window').width}}   resizeMode="contain" 
     defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    indicator={Progress.Pie}
+    indicatorProps={{
+      size: 80,
+      borderWidth: 0,
+      color: 'rgba(150, 150, 150, 1)',
+      unfilledColor: 'rgba(200, 200, 200, 0.2)'
+    }}
     />
 
           <Text style={{ fontSize: 30, fontWeight:"bold", padding: 10 , color:"red"}}>
              Existing Leased out building:
           </Text>
-          <Image source={require('../../img/JNPTBuilding1.png')} style={{   alignSelf: 'center', height: 250,
+          <Image source={require('../../img/jnptbuilding1.jpg')} style={{   alignSelf: 'center', height: 250,
     width: Dimensions.get('window').width}}   resizeMode="contain" 
     defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
-    />
-          <Image source={require('../../img/JNPTBuilding2.png')} style={{   alignSelf: 'center', height: 250,
+    indicator={Progress.Pie}
+    indicatorProps={{
+      size: 80,
+      borderWidth: 0,
+      color: 'rgba(150, 150, 150, 1)',
+      unfilledColor: 'rgba(200, 200, 200, 0.2)'
+    }}
+   />
+          <Image source={require('../../img/jnptbuilding2.jpg')} style={{   alignSelf: 'center', height: 250,
     width: Dimensions.get('window').width}}   resizeMode="contain"
     defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
+    indicator={Progress.Pie}
+    indicatorProps={{
+      size: 80,
+      borderWidth: 0,
+      color: 'rgba(150, 150, 150, 1)',
+      unfilledColor: 'rgba(200, 200, 200, 0.2)'
+    }}
     />
 
         </ScrollView>
