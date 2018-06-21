@@ -11,7 +11,6 @@ import Pitamphur from './Sites/Pitamphur';
 import Hosur from './Sites/Hosur';
 import Goa from './Sites/Goa';
 import Farrukhnagar from './Sites/Farrukhnagar';
-import {Container, Content, Body, Icon} from 'native-base';
 
 const InnerStackNavigator = new createStackNavigator({
     TabNavigator: {

@@ -84,7 +84,7 @@ class LoginScreen extends Component {
                 <Image resizeMode="contain" style={{
                     alignSelf: 'center', width: Dimensions.get('window').width - 100,
                     height: 100, margin:20
-                }} source={require('../img/Logo.png')} />
+                }} source={require('../img/logo.png')} />
             </View> 
    
         );

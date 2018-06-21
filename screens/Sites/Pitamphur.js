@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View , ScrollView, Dimensions} from 'react-native'
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import Image from 'react-native-image-progress';
-import Progress from 'react-native-progress';
+import { Text, StyleSheet, View , ScrollView,Image, Dimensions} from 'react-native'
+
 export default class Pitamphur extends Component {
   render() {
     return (
@@ -38,13 +36,7 @@ export default class Pitamphur extends Component {
                <Image source={require('../../img/pitamap.jpg')} style={{   alignSelf: 'center', height: 250,
     width: Dimensions.get('window').width}}   resizeMode="contain"
     defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
-    indicator={Progress.Pie}
-    indicatorProps={{
-      size: 80,
-      borderWidth: 0,
-      color: 'rgba(150, 150, 150, 1)',
-      unfilledColor: 'rgba(200, 200, 200, 0.2)'
-    }}
+
     />
 
                <Text style={{ fontSize: 20, fontWeight: "bold", padding: 15, color:"red" }}>
@@ -53,24 +45,12 @@ export default class Pitamphur extends Component {
                <Image source={require('../../img/pitaphoto1.jpg')} style={{   alignSelf: 'center', height: 250,
     width: Dimensions.get('window').width}}   resizeMode="contain" 
     defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
-    indicator={Progress.Pie}
-    indicatorProps={{
-      size: 80,
-      borderWidth: 0,
-      color: 'rgba(150, 150, 150, 1)',
-      unfilledColor: 'rgba(200, 200, 200, 0.2)'
-    }}
+
     />
                <Image source={require('../../img/pitaphoto2.jpg')} style={{   alignSelf: 'center', height: 250,
     width: Dimensions.get('window').width}}   resizeMode="contain"
     defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
-    indicator={Progress.Pie}
-    indicatorProps={{
-      size: 80,
-      borderWidth: 0,
-      color: 'rgba(150, 150, 150, 1)',
-      unfilledColor: 'rgba(200, 200, 200, 0.2)'
-    }}
+
     />
 
             

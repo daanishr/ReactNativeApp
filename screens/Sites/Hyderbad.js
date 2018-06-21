@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View, ScrollView, Dimensions } from 'react-native'
-import Image from 'react-native-image-progress';
-import Progress from 'react-native-progress';
+import { Text, StyleSheet, View, ScrollView,Image, Dimensions } from 'react-native'
+
 export default class Hyderbad extends Component {
     render() {
         return (
@@ -46,13 +45,7 @@ export default class Hyderbad extends Component {
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                     
                     />
                     <Text style={{ fontSize: 30, fontWeight: "bold", color: "red" }}>Current work progress at site</Text>
                     <Image source={require('../../img/hyderariel2.jpg')} style={{
@@ -60,26 +53,14 @@ export default class Hyderbad extends Component {
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                        
                     />
-                    <Image source={require('../../img/hyder.jpg')} style={{
+                    <Image source={require('../../img/Hyder.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                      
                     />
                      <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}>Technical Advantage</Text>
                     <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
@@ -110,13 +91,7 @@ export default class Hyderbad extends Component {
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                     
                     />
                    
 
@@ -126,182 +101,98 @@ export default class Hyderbad extends Component {
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                   
                     />
                     <Image source={require('../../img/file2.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                    
                     />
                     <Image source={require('../../img/file3.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                     
                     />
                     <Image source={require('../../img/file4.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                        
                     />
                     <Image source={require('../../img/file5.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                     
                     />
                     <Image source={require('../../img/file6.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                      
                     />
                     <Image source={require('../../img/file7.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                      
                     />
                     <Image source={require('../../img/file8.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                       
                     />
                     <Image source={require('../../img/file9.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                        
                     />
                     <Image source={require('../../img/file10.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                       
                     />
                     <Image source={require('../../img/file11.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                     
                     />
                     <Image source={require('../../img/file12.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                      
                     />
                     <Image source={require('../../img/file13.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                        
                     />
                     <Image source={require('../../img/file14.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                            size: 80,
-                            borderWidth: 0,
-                            color: 'rgba(150, 150, 150, 1)',
-                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                     
                     />
 
 

@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View, FlatList, ScrollView, Button, Dimensions } from 'react-native'
+import { Text, StyleSheet, View, FlatList, Image, ScrollView, Button,   ActivityIndicator, Dimensions } from 'react-native'
 
-import Image from 'react-native-image-progress';
-import Progress from 'react-native-progress';
+
 
 export default class Bangalore extends Component {
 
@@ -50,26 +49,14 @@ export default class Bangalore extends Component {
                         defaultSource={require('../../img/Loading.png')}
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                          size: 80,
-                          borderWidth: 0,
-                          color: 'rgba(150, 150, 150, 1)',
-                          unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                   
                     />
                     <Image
                             source={require('../../img/bangaloreariel2.jpg')} style={{
                                 alignSelf: 'center', height: 250,
                                 width: Dimensions.get('window').width
                             }} resizeMode="contain"
-                            indicator={Progress.Pie}
-                            indicatorProps={{
-                              size: 80,
-                              borderWidth: 0,
-                              color: 'rgba(150, 150, 150, 1)',
-                              unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                            }}
+                     
                         />
                
              
@@ -106,24 +93,18 @@ export default class Bangalore extends Component {
 
                     </Text>
                     <Image source={require('../../img/bangLayout.jpg')} style={{
-                        alignSelf: 'center', height: Dimensions.get('window').height,
+                        alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                          size: 80,
-                          borderWidth: 0,
-                          color: 'rgba(150, 150, 150, 1)',
-                          unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                 
                     />
 
-                    <Text style={{ fontSize: 20, padding: 10, fontWeight: "bold", fontcolor: "red" }}>
+                    <Text style={{ fontSize: 20, padding: 10, fontWeight: "bold", color: "red" }}>
                     Total Development – 2.3 Million sft. Area – 100 Acres
            
                     </Text>
-                    <Text style={{ fontSize: 20, padding: 10, fontWeight: "bold", fontcolor: "white" }}>
+                    <Text style={{ fontSize: 20, padding: 10, fontWeight: "bold", color: "white" }}>
 
                         FEATURES OF THE PARK
                     </Text>
@@ -179,65 +160,37 @@ export default class Bangalore extends Component {
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                          size: 80,
-                          borderWidth: 0,
-                          color: 'rgba(150, 150, 150, 1)',
-                          unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                
                     />
                     <Image source={require('../../img/bangalorework2.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                          size: 80,
-                          borderWidth: 0,
-                          color: 'rgba(150, 150, 150, 1)',
-                          unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+ 
+                     
                     />
                     <Image source={require('../../img/BangaloreWork3.png')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                          size: 80,
-                          borderWidth: 0,
-                          color: 'rgba(150, 150, 150, 1)',
-                          unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+          
+                 
                     />
                     <Image source={require('../../img/bangalorework4.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                          size: 80,
-                          borderWidth: 0,
-                          color: 'rgba(150, 150, 150, 1)',
-                          unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                  
                     />
                     <Image source={require('../../img/BangaloreWork5.png')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
-                        indicator={Progress.Pie}
-                        indicatorProps={{
-                          size: 80,
-                          borderWidth: 0,
-                          color: 'rgba(150, 150, 150, 1)',
-                          unfilledColor: 'rgba(200, 200, 200, 0.2)'
-                        }}
+                   
                     />
                 </ScrollView>
             </View>
