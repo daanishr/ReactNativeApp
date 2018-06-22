@@ -1,12 +1,38 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View, ScrollView, Image, Dimensions } from 'react-native'
+import { Text, StyleSheet, View, Image, ScrollView, ActivityIndicator, Dimensions } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import PinchZoomView from 'react-native-pinch-zoom-view';
 
 export default class Goa extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            loading: false
+        };
+    }
+    static navigationOptions = ({ navigation }) => {
+        return {
+            headerStyle: {
+                backgroundColor: 'white',
+                elevation: null
+            },
+            title: "All Cargo Logistics (Goa)",
+            headerLeft: (
+                <View style={{ padding: 10 }}>
+                    <Ionicons name="md-menu" size={34} onPress={() => navigation.openDrawer()} />
+                </View>
+            )
+        }
+    }
     render() {
         return (
             <View style={styles.container}>
-                <ScrollView>
+                {this.state.loading ? <View style={[styles.container, styles.horizontal]}>
+                    <ActivityIndicator size="large" color="red" />
+                </View> : null
+                }
+                <ScrollView pinchGestureEnabled={true} minimumZoomScale={1} maximumZoomScale={5} >
                     <Text style={{ fontSize: 40, fontWeight: "bold", paddingTop: 30, color: "white" }}> Verna (GOA) SITE
                      </Text>
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}> Summary
@@ -34,37 +60,55 @@ export default class Goa extends Component {
                    </Text>
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}> Site Location
                     </Text>
-                    <Image source={require('../../img/GoaMap1.png')} style={{
+                    <PinchZoomView>
+
+                    <Image source={require('../../img/goamap1.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
-                    <Image source={require('../../img/GoaMap2.png')} style={{
+                    </PinchZoomView>
+                    <PinchZoomView>
+
+                    <Image source={require('../../img/goamap2.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
+                            </PinchZoomView>
+
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}> Pictures of site
                     </Text>
-                    <Image source={require('../../img/Goa1.png')} style={{
+
+                    <Image source={require('../../img/goa1.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
-                    <Image source={require('../../img/Goa2.png')} style={{
+                    <Image source={require('../../img/goa3.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
-                    <Image source={require('../../img/Goa3.png')} style={{
+                    <Image source={require('../../img/goa2.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                 </ScrollView>
             </View>

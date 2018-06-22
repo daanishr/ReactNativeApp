@@ -10,8 +10,8 @@ import Hyderbad from './Sites/Hyderbad';
 import Pitamphur from './Sites/Pitamphur';
 import Hosur from './Sites/Hosur';
 import Goa from './Sites/Goa';
-import Farrukhnagar from './Sites/Farrukhnagar';
-import {Container, Content, Body, Icon} from 'native-base';
+import NCR from './Sites/Farrukhnagar';
+import Nagpur from './Sites/Nagpur';
 
 const InnerStackNavigator = new createStackNavigator({
     TabNavigator: {
@@ -19,12 +19,53 @@ const InnerStackNavigator = new createStackNavigator({
     }
 })
 
+const BangaloreStackNavigator = new createStackNavigator({
+    TabNavigator: {
+        screen: Bangalore
+    }
+})
+const HyderbadStackNavigator = new createStackNavigator({
+    TabNavigator: {
+        screen: Hyderbad
+    }
+})
+const NagpurStackNavigator = new createStackNavigator({
+    TabNavigator: {
+        screen: Nagpur
+    }
+})
+const JNPTStackNavigator = new createStackNavigator({
+    TabNavigator: {
+        screen: JNPT
+    }
+})
+const FarrukhnagarStackNavigator = new createStackNavigator({
+    TabNavigator: {
+        screen: NCR
+    }
+})
+const HosurStackNavigator = new createStackNavigator({
+    TabNavigator: {
+        screen: Hosur
+    }
+})
+
+const GoaStackNavigator = new createStackNavigator({
+    TabNavigator: {
+        screen: Goa
+    }
+})
+const PitamphurStackNavigator = new createStackNavigator({
+    TabNavigator: {
+        screen: Pitamphur
+    }
+})
 const AppDrawerNavigator = new createDrawerNavigator({
     Home: { 
         screen: InnerStackNavigator 
     },
     Bangalore: { 
-        screen: Bangalore ,
+        screen: BangaloreStackNavigator ,
         navigationOptions: {
             header: {
                 visible: true
@@ -32,26 +73,26 @@ const AppDrawerNavigator = new createDrawerNavigator({
         }
     },
     Hyderbad: { 
-        screen: Hyderbad 
+        screen: HyderbadStackNavigator
     },
     JNPT: {
-         screen: JNPT 
+         screen: JNPTStackNavigator 
         },
-    Farrukhnagar: {
-         screen: Farrukhnagar 
+    NCR: {
+         screen: FarrukhnagarStackNavigator 
         },
     Hosur: {
-        screen: Hosur
+        screen: HosurStackNavigator
     },
     Goa: {
-        screen: Goa
+        screen: GoaStackNavigator
     },
     Pitamphur: {
-         screen: Pitamphur 
+         screen: PitamphurStackNavigator 
         },
-    Video: {
-            screen: Video 
-        }
+        Nagpur: {
+            screen: NagpurStackNavigator 
+    }
 
 })
 
