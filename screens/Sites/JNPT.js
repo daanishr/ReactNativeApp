@@ -56,6 +56,41 @@ export default class JNPT extends Component {
           <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
             • Google coordinates - 18.862069, 73.010711
                    </Text>
+
+          <Text style={{ fontSize: 30, fontWeight: "bold", padding: 10, color: "red" }}>
+            Ariel View
+          </Text>
+          <Image source={require('../../img/jnptariel1.jpg')} style={{
+            alignSelf: 'center', height: 250,
+            width: Dimensions.get('window').width
+          }} resizeMode="contain"
+            defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
+            onLoadStart={(e) => this.setState({ loading: true })}
+            onLoadEnd={(e) => this.setState({ loading: false })}
+          />
+          <Image source={require('../../img/jnptariel2.jpg')} style={{
+            alignSelf: 'center', height: 250,
+            width: Dimensions.get('window').width
+          }} resizeMode="contain"
+            defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
+            onLoadStart={(e) => this.setState({ loading: true })}
+            onLoadEnd={(e) => this.setState({ loading: false })}
+          />
+
+          <Text style={{ fontSize: 30, fontWeight: "bold", padding: 10, color: "red" }}>
+            Site Location
+          </Text>
+          <Image source={require('../../img/jnptsitelocation.jpg')} style={{
+            alignSelf: 'center', height: 250,
+            width: Dimensions.get('window').width
+          }} resizeMode="contain"
+            defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
+            onLoadStart={(e) => this.setState({ loading: true })}
+            onLoadEnd={(e) => this.setState({ loading: false })}
+          />
+
+
+
           <Text style={{ fontSize: 30, fontWeight: "bold", padding: 10, color: "red" }}>
             Map View
           </Text>
@@ -78,25 +113,7 @@ export default class JNPT extends Component {
             onLoadStart={(e) => this.setState({ loading: true })}
             onLoadEnd={(e) => this.setState({ loading: false })}
           />
-          <Text style={{ fontSize: 30, fontWeight: "bold", padding: 10, color: "red" }}>
-            Ariel View
-          </Text>
-          <Image source={require('../../img/jnptariel1.jpg')} style={{
-            alignSelf: 'center', height: 250,
-            width: Dimensions.get('window').width
-          }} resizeMode="contain"
-            defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-            onLoadStart={(e) => this.setState({ loading: true })}
-            onLoadEnd={(e) => this.setState({ loading: false })}
-          />
-          <Image source={require('../../img/jnptariel2.jpg')} style={{
-            alignSelf: 'center', height: 250,
-            width: Dimensions.get('window').width
-          }} resizeMode="contain"
-            defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-            onLoadStart={(e) => this.setState({ loading: true })}
-            onLoadEnd={(e) => this.setState({ loading: false })}
-          />
+          
 
           <Text style={{ fontSize: 30, fontWeight: "bold", padding: 10, color: "red" }}>
             Existing Leased out building:
