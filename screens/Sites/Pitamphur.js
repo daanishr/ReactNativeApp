@@ -30,7 +30,7 @@ export default class Pitamphur extends Component {
           <ActivityIndicator size="large" color="red" />
         </View> : null
         }
-        <ScrollView>
+        <ScrollView pinchGestureEnabled={true} minimumZoomScale={1} maximumZoomScale={5} >
           <Text style={{ fontSize: 40, fontWeight: "bold", paddingTop: 30, color: "white" }}>
             Pitamphur Site
                </Text>

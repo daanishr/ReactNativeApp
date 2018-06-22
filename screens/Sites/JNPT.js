@@ -30,7 +30,7 @@ export default class JNPT extends Component {
           <ActivityIndicator size="large" color="red" />
         </View> : null
         }
-        <ScrollView>
+        <ScrollView pinchGestureEnabled={true} minimumZoomScale={1} maximumZoomScale={5} >
 
           <Text style={{ fontSize: 40, fontWeight: "bold", paddingTop: 30, color: "white" }}> JNPT site</Text>
           <Text style={{ fontSize: 30, padding: 10, color: "red" }}>Summary</Text>

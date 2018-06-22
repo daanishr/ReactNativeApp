@@ -31,7 +31,7 @@ export default class Hyderbad extends Component {
                     <ActivityIndicator size="large" color="red" />
                 </View> : null
                 }
-                <ScrollView >
+                <ScrollView pinchGestureEnabled={true} minimumZoomScale={1} maximumZoomScale={5} >
 
                     <Text style={{ fontSize: 30, fontWeight: "bold", paddingTop: 30, color: "white" }}>
                         Hyderbad
@@ -122,10 +122,10 @@ export default class Hyderbad extends Component {
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
-    <Text style={{ fontSize: 30, fontWeight: "bold", padding: 10, color: "red" }}>
+                    <Text style={{ fontSize: 30, fontWeight: "bold", padding: 10, color: "red" }}>
                         Location
           </Text>
-          <Image source={require('../../img/HydLoc1.jpg')} style={{
+                    <Image source={require('../../img/HydLoc1.jpg')} style={{
                         alignSelf: 'center', height: 350,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
@@ -133,7 +133,7 @@ export default class Hyderbad extends Component {
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
-                     <Image source={require('../../img/HydLoc2.jpg')} style={{
+                    <Image source={require('../../img/HydLoc2.jpg')} style={{
                         alignSelf: 'center', height: 350,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
@@ -142,10 +142,13 @@ export default class Hyderbad extends Component {
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
 
-                    <Text style={{ fontSize: 30, fontWeight: "bold", padding: 10, color: "white" }}>
-                          PATANCHERU-SHANKARAPALLI ROAD – NH 9- TOWARDS MUMBAI
+                    <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "white" }}>
+                        PATANCHERU-SHANKARAPALLI ROAD – NH 9- TOWARDS MUMBAI
                     </Text>
-                     <Image source={require('../../img/HydLoc3.jpg')} style={{
+                    <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
+                        21 kms – to site from Gachibowli
+                    </Text>
+                    <Image source={require('../../img/HydLoc3.jpg')} style={{
                         alignSelf: 'center', height: 350,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
@@ -153,10 +156,10 @@ export default class Hyderbad extends Component {
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
-                      <Text style={{ fontSize: 30, padding: 10, color: "white" }}>
-                      21 kms – to site from Gachibowli
+                   <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
+                        7 kms – to site from ORR – NH9
                     </Text>
-                     <Image source={require('../../img/HydLoc4.jpg')} style={{
+                    <Image source={require('../../img/HydLoc4.jpg')} style={{
                         alignSelf: 'center', height: 350,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
@@ -164,9 +167,7 @@ export default class Hyderbad extends Component {
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
-                      <Text style={{ fontSize: 30,  padding: 10, color: "white" }}>
-                      7 kms – to site from ORR – NH9
-                    </Text>
+                   
 
                     <Text style={{ fontSize: 30, fontWeight: "bold", color: "red" }}>Current work progress at site</Text>
                     <Image source={require('../../img/file1.jpeg')} style={{
@@ -186,7 +187,7 @@ export default class Hyderbad extends Component {
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/file3.jpeg')} style={{
-                        alignSelf: 'center', height: 250,
+                        alignSelf: 'center', height: 550,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
@@ -266,7 +267,7 @@ export default class Hyderbad extends Component {
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/file13.jpeg')} style={{
-                        alignSelf: 'center', height: 250,
+                        alignSelf: 'center', height: 550,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}

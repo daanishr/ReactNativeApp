@@ -31,7 +31,7 @@ export default class Goa extends Component {
                     <ActivityIndicator size="large" color="red" />
                 </View> : null
                 }
-                <ScrollView>
+                <ScrollView pinchGestureEnabled={true} minimumZoomScale={1} maximumZoomScale={5} >
                     <Text style={{ fontSize: 40, fontWeight: "bold", paddingTop: 30, color: "white" }}> Verna (GOA) SITE
                      </Text>
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}> Summary

@@ -34,7 +34,7 @@ export default class Bangalore extends Component {
                 </View> : null
                 }
 
-                <ScrollView contentContainerStyle={styles.contentContainer} pinchGestureEnabled={true} maximumZoomScale={2} >
+                <ScrollView contentContainerStyle={styles.contentContainer} pinchGestureEnabled={true} minimumZoomScale={1} maximumZoomScale={5} >
                     <Text style={{ paddingTop: 30, fontSize: 30, fontWeight: "bold", color: "white" }}> Bangalore (Malur-Soukya Road)</Text>
                     <Text style={{ fontSize: 30, padding: 15, color: "red" }}>Summary</Text>
                     <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
@@ -178,26 +178,26 @@ export default class Bangalore extends Component {
                    </Text>
 
                     <Text style={{ fontSize: 30, fontWeight: "bold", color: "red" }}>Current work progress at site</Text>
-                    <Image source={require('../../img/BangCurrentWork1.jpg')} style={{
-                        alignSelf: 'center', height: 250,
-                        width: Dimensions.get('window').width
+                    <Image source={require('../../img/bangalorework1.jpg')} style={{
+                        alignSelf: 'center', height: 450,
+                        width: Dimensions.get('window').width, padding:10
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
-                    <Image source={require('../../img/BangCurrentWork2.jpg')} style={{
-                        alignSelf: 'center', height: 250,
-                        width: Dimensions.get('window').width
+                    <Image source={require('../../img/bangalorework2.jpg')} style={{
+                        alignSelf: 'center', height: 450,
+                        width: Dimensions.get('window').width, padding:10
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                      
                     />
-                    <Image source={require('../../img/BangCurrentWork3.jpg')} style={{
-                        alignSelf: 'center', height: 250,
-                        width: Dimensions.get('window').width
+                    <Image source={require('../../img/bangalorework3.jpg')} style={{
+                        alignSelf: 'center', height: 450,
+                        width: Dimensions.get('window').width, padding:10
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
                         onLoadStart={(e) => this.setState({ loading: true })}
@@ -205,16 +205,16 @@ export default class Bangalore extends Component {
                  
                     />
                     <Image source={require('../../img/bangalorework4.jpg')} style={{
-                        alignSelf: 'center', height: 250,
-                        width: Dimensions.get('window').width
+                        alignSelf: 'center', height: 450,
+                        width: Dimensions.get('window').width, padding:10
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
-                    <Image source={require('../../img/BangaloreWork5.png')} style={{
-                        alignSelf: 'center', height: 250,
-                        width: Dimensions.get('window').width
+                    <Image source={require('../../img/bangalorework5.jpg')} style={{
+                        alignSelf: 'center', height: 450,
+                        width: Dimensions.get('window').width, padding: 10
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
                         onLoadStart={(e) => this.setState({ loading: true })}
