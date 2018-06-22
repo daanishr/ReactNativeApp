@@ -3,19 +3,19 @@
   "expo": {
    "name": "All Cargo Warehouse",
    "icon": "./img/logo/android/playstore-icon.png",
-   "version": "0.0.1",
+   "version": "0.0.2",
    "slug": "daanishrallcargo",
    "sdkVersion": "27.0.0",
-   "description": "All cargo warehouse show app",
+   "description": "All cargo warehouse app",
    "ios": {
-     "bundleIdentifier": "com.allCargp.allCargoWarehouse"
+     "bundleIdentifier": "com.allCargp.allCargoWarehouseApp"
    },
    "assetBundlePatterns": [
     "assets/img/*",
     "assets/images/*"
   ],
    "android": {
-     "package": "com.allCargo.allCargoWarehouse"
+     "package": "com.allCargo.allCargoWarehouseApp"
    }
   }
 }

@@ -18,12 +18,48 @@ const InnerStackNavigator = new createStackNavigator({
     }
 })
 
+const BangaloreStackNavigator = new createStackNavigator({
+    TabNavigator: {
+        screen: Bangalore
+    }
+})
+const HyderbadStackNavigator = new createStackNavigator({
+    TabNavigator: {
+        screen: Hyderbad
+    }
+})
+const JNPTStackNavigator = new createStackNavigator({
+    TabNavigator: {
+        screen: JNPT
+    }
+})
+const FarrukhnagarStackNavigator = new createStackNavigator({
+    TabNavigator: {
+        screen: Farrukhnagar
+    }
+})
+const HosurStackNavigator = new createStackNavigator({
+    TabNavigator: {
+        screen: Hosur
+    }
+})
+
+const GoaStackNavigator = new createStackNavigator({
+    TabNavigator: {
+        screen: Goa
+    }
+})
+const PitamphurStackNavigator = new createStackNavigator({
+    TabNavigator: {
+        screen: Pitamphur
+    }
+})
 const AppDrawerNavigator = new createDrawerNavigator({
     Home: { 
         screen: InnerStackNavigator 
     },
     Bangalore: { 
-        screen: Bangalore ,
+        screen: BangaloreStackNavigator ,
         navigationOptions: {
             header: {
                 visible: true
@@ -31,25 +67,22 @@ const AppDrawerNavigator = new createDrawerNavigator({
         }
     },
     Hyderbad: { 
-        screen: Hyderbad 
+        screen: HyderbadStackNavigator
     },
     JNPT: {
-         screen: JNPT 
+         screen: JNPTStackNavigator 
         },
     Farrukhnagar: {
-         screen: Farrukhnagar 
+         screen: FarrukhnagarStackNavigator 
         },
     Hosur: {
-        screen: Hosur
+        screen: HosurStackNavigator
     },
     Goa: {
-        screen: Goa
+        screen: GoaStackNavigator
     },
     Pitamphur: {
-         screen: Pitamphur 
-        },
-    Video: {
-            screen: Video 
+         screen: PitamphurStackNavigator 
         }
 
 })

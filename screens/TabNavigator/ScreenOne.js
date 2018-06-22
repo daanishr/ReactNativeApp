@@ -14,7 +14,7 @@ export default class ScreenOne extends Component {
             alignSelf: 'center', width: Dimensions.get('window').width - 100,
             height: 100, margin: 20
           }} 
-          source={require('../../img/logo.png')}
+          source={require('../../img/Logo.png')}
           defaultSource={{uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200}}
           />
           <Image source={require('../../img/warehousefinal.jpg')} style={{

@@ -1,10 +1,36 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View, ScrollView,Image, Dimensions } from 'react-native'
+import { Text, StyleSheet, View, ScrollView,Image,ActivityIndicator, Dimensions } from 'react-native'
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default class Hyderbad extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            loading: false
+        };
+    }
+    static navigationOptions = ({ navigation }) => {
+        return {
+            headerStyle: {
+                backgroundColor: 'white', 
+                elevation: null
+            },
+            title: "All Cargo Logistics",
+            headerLeft: (
+                <View style={{ padding: 10 }}>
+                    <Ionicons name="md-menu" size={34} onPress={() => navigation.openDrawer()} />
+                </View>
+            )
+        }
+    }
     render() {
         return (
             <View style={styles.container}>
+             {this.state.loading ? <View style={[styles.container, styles.horizontal]}>
+                    <ActivityIndicator size="large" color="red" />
+                </View> : null
+                }
                 <ScrollView >
 
                     <Text style={{ fontSize: 30, fontWeight: "bold", paddingTop: 30, color: "white" }}>
@@ -45,7 +71,8 @@ export default class Hyderbad extends Component {
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                     
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Text style={{ fontSize: 30, fontWeight: "bold", color: "red" }}>Current work progress at site</Text>
                     <Image source={require('../../img/hyderariel2.jpg')} style={{
@@ -53,14 +80,16 @@ export default class Hyderbad extends Component {
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
-                    <Image source={require('../../img/Hyder.jpg')} style={{
+                    <Image source={require('../../img/hyder.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
-                      
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                      <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}>Technical Advantage</Text>
                     <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
@@ -91,7 +120,8 @@ export default class Hyderbad extends Component {
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                     
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                    
 
@@ -101,98 +131,112 @@ export default class Hyderbad extends Component {
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                   
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/file2.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                    
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/file3.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                     
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/file4.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/file5.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                     
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/file6.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                      
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/file7.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                      
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/file8.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                       
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/file9.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/file10.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                       
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/file11.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                     
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/file12.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                      
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/file13.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                        
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/file14.jpeg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-                     
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
 
 

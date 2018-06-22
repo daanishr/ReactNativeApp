@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, FlatList, Image, ScrollView, Button,   ActivityIndicator, Dimensions } from 'react-native'
-
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 
 export default class Bangalore extends Component {
@@ -12,7 +12,20 @@ export default class Bangalore extends Component {
         };
     }
 
-
+    static navigationOptions = ({ navigation }) => {
+        return {
+            headerStyle: {
+                backgroundColor: 'white', 
+                elevation: null
+            },
+            title: "All Cargo Logistics",
+            headerLeft: (
+                <View style={{ padding: 10 }}>
+                    <Ionicons name="md-menu" size={34} onPress={() => navigation.openDrawer()} />
+                </View>
+            )
+        }
+    }
     render() {
         return (
             <View style={styles.container}>
@@ -56,7 +69,8 @@ export default class Bangalore extends Component {
                                 alignSelf: 'center', height: 250,
                                 width: Dimensions.get('window').width
                             }} resizeMode="contain"
-                     
+                            onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                         />
                
              
@@ -97,7 +111,8 @@ export default class Bangalore extends Component {
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
-                 
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
 
                     <Text style={{ fontSize: 20, padding: 10, fontWeight: "bold", color: "red" }}>
@@ -160,14 +175,16 @@ export default class Bangalore extends Component {
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
-                
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/bangalorework2.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
- 
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                      
                     />
                     <Image source={require('../../img/BangaloreWork3.png')} style={{
@@ -175,7 +192,8 @@ export default class Bangalore extends Component {
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
-          
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                  
                     />
                     <Image source={require('../../img/bangalorework4.jpg')} style={{
@@ -183,14 +201,16 @@ export default class Bangalore extends Component {
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
-                  
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                     <Image source={require('../../img/BangaloreWork5.png')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={require('../../img/Loading.png')}
-                   
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
                     />
                 </ScrollView>
             </View>

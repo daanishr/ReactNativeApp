@@ -57,13 +57,22 @@ class LoginScreen extends Component {
                  </View>: null
             }
                 <TextInput
-                    style={{ height: 40, width: 170, borderColor: 'black', padding: 10, color: "white", borderWidth: 1, marginBottom: 20 }}
+                    style={{ height: 40, width: 170,    
+                        borderTopLeftRadius:15,
+                        borderTopRightRadius: 15,
+                        borderBottomRightRadius:15,
+                        borderBottomLeftRadius:15, borderColor: 'grey', padding: 10,backgroundColor: 'white', color: "black", borderWidth: 1, marginBottom: 20 }}
                     onChangeText={(companyName) => this.setState({ companyName })}
                     value={this.state.companyName}
                     placeholder="Enter Company Name"
                 />
                 <TextInput
-                    style={{ height: 40, width: 170, borderColor: 'black', padding: 10, color: "white", borderWidth: 1, marginBottom: 20 }}
+                    style={{ height: 40, width: 170, borderColor: 'grey',         borderTopLeftRadius:15,
+                    borderTopRightRadius: 15,
+                    borderBottomRightRadius:15,
+                    borderBottomLeftRadius:15, borderpadding: 10,
+                    padding: 10,
+                    backgroundColor: 'white', color: "black", borderWidth: 1, marginBottom: 20 }}
                     onChangeText={(email) => this.setState({ email })}
                     keyboardType="email-address"
                     keyboardAppearance="dark"
@@ -72,7 +81,13 @@ class LoginScreen extends Component {
                     placeholder="Enter Email Address"
                 />
                 <TextInput
-                    style={{ height: 40, width: 170, borderColor: 'black', padding: 10, color: "white", borderWidth: 1, marginBottom: 20 }}
+                    style={{ height: 40, width: 170, backgroundColor: 
+                        'white', 
+                    borderTopLeftRadius:15,
+                    borderTopRightRadius: 15,
+                    borderBottomRightRadius:15,
+                    borderBottomLeftRadius:15,
+                    borderColor: 'white', padding: 10, color: "black", borderWidth: 1, marginBottom: 20 }}
                     onChangeText={(mobile) => this.setState({ mobile })}
                     keyboardType="phone-pad"
                     enablesReturnKeyAutomatically={true}
@@ -84,7 +99,7 @@ class LoginScreen extends Component {
                 <Image resizeMode="contain" style={{
                     alignSelf: 'center', width: Dimensions.get('window').width - 100,
                     height: 100, margin:20
-                }} source={require('../img/logo.png')} />
+                }} source={require('../img/Logo.png')} />
             </View> 
    
         );
@@ -104,5 +119,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         padding: 10
+      },
+      textEdit: {
+        height: 40, 
+        borderColor: 'grey', 
+        backgroundColor: 'white',
+        borderWidth: 1
       }
 });
