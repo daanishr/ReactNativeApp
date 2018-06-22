@@ -54,7 +54,7 @@ export default class Hosur extends Component {
             • Google coordinates - 12.6809180, 77.9557630
                    </Text>
           <Image source={require('../../img/hosurbuilding.jpg')} style={{
-            alignSelf: 'center', height: 250,
+            alignSelf: 'center', height: 350,
             width: Dimensions.get('window').width
           }} resizeMode="contain"
             defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}

@@ -38,20 +38,32 @@ export default class Nagpur extends Component {
           <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}> Summary
         </Text>
           <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
-            • Total Land Area – 11.68 acres
+      
+          •  Total Land Area – 60 acres
+
+
+
+
+
+
+
+
+
+Google coordinates - 20.857689, 78.97522
+
                    </Text>
           <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
             • Type of Usage- Warehousing & Industrial
                    </Text>
           <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
-            • Total Leasable Area – 200,000 sqft approx.
+            • Total Leasable Area – 2.6mn sqft.
                    </Text>
           <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
-            • BTS Area available for lease- 92,173 sqft
+            • Micro-market –  Near Butibori Industrial area
                    </Text>
           <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
 
-            • Google coordinates - 12.6809180, 77.9557630
+            • Location – opposite to Borkhedi Railway Station
                    </Text>
           <Image source={require('../../img/hosurbuilding.jpg')} style={{
             alignSelf: 'center', height: 250,

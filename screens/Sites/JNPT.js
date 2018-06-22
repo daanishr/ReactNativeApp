@@ -119,7 +119,7 @@ export default class JNPT extends Component {
             Existing Leased out building:
           </Text>
           <Image source={require('../../img/jnptbuilding1.jpg')} style={{
-            alignSelf: 'center', height: 250,
+            alignSelf: 'center', height: 350,
             width: Dimensions.get('window').width
           }} resizeMode="contain"
             defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
@@ -127,7 +127,7 @@ export default class JNPT extends Component {
             onLoadEnd={(e) => this.setState({ loading: false })}
           />
           <Image source={require('../../img/jnptbuilding2.jpg')} style={{
-            alignSelf: 'center', height: 250,
+            alignSelf: 'center', height: 350,
             width: Dimensions.get('window').width
           }} resizeMode="contain"
             defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
