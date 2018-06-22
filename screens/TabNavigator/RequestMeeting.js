@@ -80,7 +80,6 @@ export default class RequestMeeting extends Component {
           value={this.state.mobile}
           placeholder="Enter Mobile No"
         />
-        <Button title="Select Date" onPress={() => this.openDatePicker()}></Button>
         {/* <Button 
                 
                 title="Date" onPress={() => this.props.dateChosen()} />
@@ -111,7 +110,7 @@ export default class RequestMeeting extends Component {
         {Platform.OS === "ios" ? <DatePickerIOS
           date={this.state.chosenDate}
           onDateChange={this.setDate}
-        /> : <Text></Text>}
+        /> : <Button title="Select Date" onPress={() => this.openDatePicker()}></Button>}
 
         <Button
           title="Confirm Meeting"   color="red" onPress={() => this.confirm()} />
