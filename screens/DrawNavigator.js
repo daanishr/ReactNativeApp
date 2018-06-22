@@ -10,7 +10,7 @@ import Hyderbad from './Sites/Hyderbad';
 import Pitamphur from './Sites/Pitamphur';
 import Hosur from './Sites/Hosur';
 import Goa from './Sites/Goa';
-import Farrukhnagar from './Sites/Farrukhnagar';
+import NCR from './Sites/Farrukhnagar';
 
 const InnerStackNavigator = new createStackNavigator({
     TabNavigator: {
@@ -35,7 +35,7 @@ const JNPTStackNavigator = new createStackNavigator({
 })
 const FarrukhnagarStackNavigator = new createStackNavigator({
     TabNavigator: {
-        screen: Farrukhnagar
+        screen: NCR
     }
 })
 const HosurStackNavigator = new createStackNavigator({
@@ -72,7 +72,7 @@ const AppDrawerNavigator = new createDrawerNavigator({
     JNPT: {
          screen: JNPTStackNavigator 
         },
-    Farrukhnagar: {
+    NCR: {
          screen: FarrukhnagarStackNavigator 
         },
     Hosur: {
