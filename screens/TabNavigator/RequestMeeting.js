@@ -32,8 +32,8 @@ export default class RequestMeeting extends Component {
       });
       if (action !== DatePickerAndroid.dismissedAction) {
         // Selected year, month (0-11), day
-        const date= new Date(year, month, day);
-        Alert.alert("Selected date "+ date.toDateString());
+        const date = new Date(year, month, day);
+        Alert.alert("Selected date " + date.toDateString());
         this.setState({ chosenDate: date });
       }
 
@@ -114,7 +114,7 @@ export default class RequestMeeting extends Component {
         /> : <Text></Text>}
 
         <Button
-          title="Confirm Meeting"   color="red" onPress={() => this.confirm()} />
+          title="Confirm Meeting" color="red" onPress={() => this.confirm()} />
       </View>
     )
   }

@@ -18,14 +18,6 @@ export default class Hosur extends Component {
         elevation: null
       },
       title: "All Cargo Logistics",
-      headerRight: (
-        <View style={{ padding: 10 }}>
-          <Image tyle={{
-            alignSelf: 'right', height: 15,
-            width: 15
-          }} source={require('../../img/logo/android/playstore-icon.png')} />
-        </View>
-      ),
       headerLeft: (
         <View style={{ padding: 10 }}>
           <Ionicons name="md-menu" size={34} onPress={() => navigation.openDrawer()} />

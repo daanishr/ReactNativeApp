@@ -74,7 +74,17 @@ export default class Bangalore extends Component {
                         />
                
              
-               
+               <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}>
+                        Entrance View
+                </Text>
+                <Image source={require('../../img/BangEntranceView.jpg')} style={{
+                        alignSelf: 'center', height: 250,
+                        width: Dimensions.get('window').width
+                    }} resizeMode="contain"
+                        defaultSource={require('../../img/Loading.png')}
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
+                    />
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}>
                         Location Advantage
                    </Text>
@@ -82,10 +92,8 @@ export default class Bangalore extends Component {
                         From our industrial park in Malur, the City of Bangalore is located at 35 kilometres    and  Kempegowda International Airport is at 40 kilometres. With main access of 80 ft wide road, we are situated at close proximity to various industrial clusters of    Bengaluru like Hosakote, Narasapura, Bommanahalli, etc. It takes less than an hour       to reach either destination. Our warehouses are so serene that they not only provide     a locational advantage but also give a good real estate valuation in the coming future.
      
                    </Text>
-
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}>
-                        TECHNICAL ADVANTAGE :
-   
+                        Technical Advantage
                    </Text>
                     <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
                         •	12.00 m eave height with Bare Galvalume standing seam roofing system & 4.00 m wide cantilever canopy on docking side.
@@ -121,7 +129,7 @@ export default class Bangalore extends Component {
                     </Text>
                     <Text style={{ fontSize: 20, padding: 10, fontWeight: "bold", color: "white" }}>
 
-                        FEATURES OF THE PARK
+                        Features of the Park
                     </Text>
                     <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
                         • Truck Parking
@@ -170,7 +178,7 @@ export default class Bangalore extends Component {
                    </Text>
 
                     <Text style={{ fontSize: 30, fontWeight: "bold", color: "red" }}>Current work progress at site</Text>
-                    <Image source={require('../../img/BangaloreWork1.png')} style={{
+                    <Image source={require('../../img/BangCurrentWork1.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
@@ -178,7 +186,7 @@ export default class Bangalore extends Component {
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
-                    <Image source={require('../../img/bangalorework2.jpg')} style={{
+                    <Image source={require('../../img/BangCurrentWork2.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
@@ -187,7 +195,7 @@ export default class Bangalore extends Component {
                         onLoadEnd={(e) => this.setState({ loading: false })}
                      
                     />
-                    <Image source={require('../../img/BangaloreWork3.png')} style={{
+                    <Image source={require('../../img/BangCurrentWork3.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"

@@ -37,7 +37,7 @@ export default class Hyderbad extends Component {
                         Hyderbad
           </Text>
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}>
-                        INTRODUCTION :
+                        Introduction
           </Text>
                     <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
                         Our Industrial Park in Hyderabad is spread over 30 acres with 7 lac sq ft of built up area. It offers you the advantage of connectivity, giving you easy access to not only the surrounding industrial hubs, but also to the major cities, transport routes and any other important facilities like bank and hospitals. With easy access and direct access to Gachibowli and Rajiv Gandhi International Airport we are uniquely poised to maximize the locational advantage.
@@ -74,7 +74,6 @@ export default class Hyderbad extends Component {
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
-                    <Text style={{ fontSize: 30, fontWeight: "bold", color: "red" }}>Current work progress at site</Text>
                     <Image source={require('../../img/hyderariel2.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
@@ -116,7 +115,26 @@ export default class Hyderbad extends Component {
                         Layout
           </Text>
                     <Image source={require('../../img/HydLayout.png')} style={{
-                        alignSelf: 'center', height: 250,
+                        alignSelf: 'center', height: 350,
+                        width: Dimensions.get('window').width
+                    }} resizeMode="contain"
+                        defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
+                    />
+    <Text style={{ fontSize: 30, fontWeight: "bold", padding: 10, color: "red" }}>
+                        Location
+          </Text>
+          <Image source={require('../../img/HydLoc1.jpg')} style={{
+                        alignSelf: 'center', height: 350,
+                        width: Dimensions.get('window').width
+                    }} resizeMode="contain"
+                        defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
+                    />
+                     <Image source={require('../../img/HydLoc2.jpg')} style={{
+                        alignSelf: 'center', height: 350,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
@@ -124,6 +142,31 @@ export default class Hyderbad extends Component {
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
 
+                    <Text style={{ fontSize: 30, fontWeight: "bold", padding: 10, color: "white" }}>
+                          PATANCHERU-SHANKARAPALLI ROAD – NH 9- TOWARDS MUMBAI
+                    </Text>
+                     <Image source={require('../../img/HydLoc3.jpg')} style={{
+                        alignSelf: 'center', height: 350,
+                        width: Dimensions.get('window').width
+                    }} resizeMode="contain"
+                        defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
+                    />
+                      <Text style={{ fontSize: 30, padding: 10, color: "white" }}>
+                      21 kms – to site from Gachibowli
+                    </Text>
+                     <Image source={require('../../img/HydLoc4.jpg')} style={{
+                        alignSelf: 'center', height: 350,
+                        width: Dimensions.get('window').width
+                    }} resizeMode="contain"
+                        defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
+                        onLoadStart={(e) => this.setState({ loading: true })}
+                        onLoadEnd={(e) => this.setState({ loading: false })}
+                    />
+                      <Text style={{ fontSize: 30,  padding: 10, color: "white" }}>
+                      7 kms – to site from ORR – NH9
+                    </Text>
 
                     <Text style={{ fontSize: 30, fontWeight: "bold", color: "red" }}>Current work progress at site</Text>
                     <Image source={require('../../img/file1.jpeg')} style={{
