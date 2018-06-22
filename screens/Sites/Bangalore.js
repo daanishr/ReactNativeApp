@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, FlatList, Image, ScrollView, Button,   ActivityIndicator, Dimensions } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import PinchZoomView from 'react-native-pinch-zoom-view';
 
 
 export default class Bangalore extends Component {
@@ -18,7 +19,7 @@ export default class Bangalore extends Component {
                 backgroundColor: 'white', 
                 elevation: null
             },
-            title: "All Cargo Logistics",
+            title: "All Cargo Logistics (Bangalore)",
             headerLeft: (
                 <View style={{ padding: 10 }}>
                     <Ionicons name="md-menu" size={34} onPress={() => navigation.openDrawer()} />
@@ -54,6 +55,8 @@ export default class Bangalore extends Component {
                    </Text>
 
                     <Text style={{ fontSize: 30, fontWeight: "bold", color: "red" }}>Aerial View</Text>
+                    <PinchZoomView>
+
                     <Image
                         source={require('../../img/bangaloreariel1.jpg')} style={{
                             alignSelf: 'center', height: 250,
@@ -64,6 +67,9 @@ export default class Bangalore extends Component {
                         onLoadEnd={(e) => this.setState({ loading: false })}
                    
                     />
+                            </PinchZoomView>
+                            <PinchZoomView>
+
                     <Image
                             source={require('../../img/bangaloreariel2.jpg')} style={{
                                 alignSelf: 'center', height: 250,
@@ -73,7 +79,8 @@ export default class Bangalore extends Component {
                         onLoadEnd={(e) => this.setState({ loading: false })}
                         />
                
-             
+               </PinchZoomView>
+
                <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}>
                         Entrance View
                 </Text>
@@ -114,6 +121,8 @@ export default class Bangalore extends Component {
                     <Text style={{ fontSize: 20, fontWeight: "bold", color: "red" }}>Project Master Layout
 
                     </Text>
+                    <PinchZoomView>
+
                     <Image source={require('../../img/bangLayout.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
@@ -122,6 +131,7 @@ export default class Bangalore extends Component {
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
+        </PinchZoomView>
 
                     <Text style={{ fontSize: 20, padding: 10, fontWeight: "bold", color: "red" }}>
                     Total Development – 2.3 Million sft. Area – 100 Acres

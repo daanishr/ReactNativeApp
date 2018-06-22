@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, ScrollView, Image, ActivityIndicator, Dimensions } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import PinchZoomView from 'react-native-pinch-zoom-view';
 
 export default class Pitamphur extends Component {
   constructor(props) {
@@ -15,7 +16,8 @@ export default class Pitamphur extends Component {
         backgroundColor: 'white',
         elevation: null
       },
-      title: "All Cargo Logistics",
+      title: "All Cargo Logistics (Pitamphur)"
+      ,
       headerLeft: (
         <View style={{ padding: 10 }}>
           <Ionicons name="md-menu" size={34} onPress={() => navigation.openDrawer()} />
@@ -58,6 +60,8 @@ export default class Pitamphur extends Component {
           <Text style={{ fontSize: 20, fontWeight: "bold", padding: 15, color: "red" }}>
             Site Location
                </Text>
+               <PinchZoomView>
+
           <Image source={require('../../img/pitamap.jpg')} style={{
             alignSelf: 'center', height: 250,
             width: Dimensions.get('window').width
@@ -66,6 +70,7 @@ export default class Pitamphur extends Component {
             onLoadStart={(e) => this.setState({ loading: true })}
             onLoadEnd={(e) => this.setState({ loading: false })}
           />
+           </PinchZoomView>
 
           <Text style={{ fontSize: 20, fontWeight: "bold", padding: 15, color: "red" }}>
             Current work

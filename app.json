@@ -8,7 +8,7 @@
    "sdkVersion": "27.0.0",
    "description": "All cargo warehouse app",
    "ios": {
-     "bundleIdentifier": "com.allCargp.allCargoWarehouseApp"
+     "bundleIdentifier": "com.allCargp.allCargoWarehouseAppios"
    },
    "assetBundlePatterns": [
     "assets/img/*",

@@ -11,6 +11,7 @@ import Pitamphur from './Sites/Pitamphur';
 import Hosur from './Sites/Hosur';
 import Goa from './Sites/Goa';
 import NCR from './Sites/Farrukhnagar';
+import Nagpur from './Sites/Nagpur';
 
 const InnerStackNavigator = new createStackNavigator({
     TabNavigator: {
@@ -26,6 +27,11 @@ const BangaloreStackNavigator = new createStackNavigator({
 const HyderbadStackNavigator = new createStackNavigator({
     TabNavigator: {
         screen: Hyderbad
+    }
+})
+const NagpurStackNavigator = new createStackNavigator({
+    TabNavigator: {
+        screen: Nagpur
     }
 })
 const JNPTStackNavigator = new createStackNavigator({
@@ -83,7 +89,10 @@ const AppDrawerNavigator = new createDrawerNavigator({
     },
     Pitamphur: {
          screen: PitamphurStackNavigator 
-        }
+        },
+        Nagpur: {
+            screen: NagpurStackNavigator 
+    }
 
 })
 

@@ -18,7 +18,7 @@ export default class Hosur extends Component {
         backgroundColor: 'white',
         elevation: null
       },
-      title: "All Cargo Logistics",
+      title: "All Cargo Logistics (Hosur)",
       headerLeft: (
         <View style={{ padding: 10 }}>
           <Ionicons name="md-menu" size={34} onPress={() => navigation.openDrawer()} />
@@ -74,10 +74,12 @@ export default class Hosur extends Component {
             onLoadStart={(e) => this.setState({ loading: true })}
             onLoadEnd={(e) => this.setState({ loading: false })}
           />
-          <PinchZoomView>
+          </PinchZoomView>
 
           <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}> Layout
         </Text>
+
+        <PinchZoomView>
           <Image source={require('../../img/hosurlayout.jpg')} style={{
             alignSelf: 'center', height: 250,
             width: Dimensions.get('window').width
@@ -86,7 +88,7 @@ export default class Hosur extends Component {
             onLoadStart={(e) => this.setState({ loading: true })}
             onLoadEnd={(e) => this.setState({ loading: false })}
           />
-
+         </PinchZoomView>
         </ScrollView>
       </View>
     )

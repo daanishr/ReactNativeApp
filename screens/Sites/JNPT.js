@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, Image, ScrollView, ActivityIndicator, Dimensions } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import PinchZoomView from 'react-native-pinch-zoom-view';
 
 export default class JNPT extends Component {
   constructor(props) {
@@ -15,7 +16,7 @@ export default class JNPT extends Component {
         backgroundColor: 'white',
         elevation: null
       },
-      title: "All Cargo Logistics",
+      title: "All Cargo Logistics (JNPT)",
       headerLeft: (
         <View style={{ padding: 10 }}>
           <Ionicons name="md-menu" size={34} onPress={() => navigation.openDrawer()} />
@@ -80,6 +81,8 @@ export default class JNPT extends Component {
           <Text style={{ fontSize: 30, fontWeight: "bold", padding: 10, color: "red" }}>
             Site Location
           </Text>
+          <PinchZoomView>
+
           <Image source={require('../../img/jnptsitelocation.jpg')} style={{
             alignSelf: 'center', height: 250,
             width: Dimensions.get('window').width
@@ -88,12 +91,16 @@ export default class JNPT extends Component {
             onLoadStart={(e) => this.setState({ loading: true })}
             onLoadEnd={(e) => this.setState({ loading: false })}
           />
+                  </PinchZoomView>
+
 
 
 
           <Text style={{ fontSize: 30, fontWeight: "bold", padding: 10, color: "red" }}>
             Map View
           </Text>
+          <PinchZoomView>
+
           <Image source={require('../../img/jnptmapview.jpg')} style={{
             alignSelf: 'center', height: 250,
             width: Dimensions.get('window').width
@@ -102,9 +109,13 @@ export default class JNPT extends Component {
             onLoadStart={(e) => this.setState({ loading: true })}
             onLoadEnd={(e) => this.setState({ loading: false })}
           />
+          </PinchZoomView>
+
           <Text style={{ fontSize: 30, fontWeight: "bold", padding: 10, color: "red" }}>
             Layout of the land
           </Text>
+          <PinchZoomView>
+
           <Image source={require('../../img/jnptlayout.jpg')} style={{
             alignSelf: 'center', height: 250,
             width: Dimensions.get('window').width
@@ -114,6 +125,7 @@ export default class JNPT extends Component {
             onLoadEnd={(e) => this.setState({ loading: false })}
           />
           
+          </PinchZoomView>
 
           <Text style={{ fontSize: 30, fontWeight: "bold", padding: 10, color: "red" }}>
             Existing Leased out building:

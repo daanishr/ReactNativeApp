@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, ScrollView, Image, ActivityIndicator, Dimensions } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import PinchZoomView from 'react-native-pinch-zoom-view';
 
 export default class Hyderbad extends Component {
 
@@ -16,7 +17,7 @@ export default class Hyderbad extends Component {
                 backgroundColor: 'white',
                 elevation: null
             },
-            title: "All Cargo Logistics",
+            title: "All Cargo Logistics (Hyderbad)",
             headerLeft: (
                 <View style={{ padding: 10 }}>
                     <Ionicons name="md-menu" size={34} onPress={() => navigation.openDrawer()} />
@@ -114,6 +115,8 @@ export default class Hyderbad extends Component {
                     <Text style={{ fontSize: 30, fontWeight: "bold", padding: 10, color: "red" }}>
                         Layout
           </Text>
+          <PinchZoomView>
+
                     <Image source={require('../../img/HydLayout.png')} style={{
                         alignSelf: 'center', height: 350,
                         width: Dimensions.get('window').width
@@ -122,9 +125,13 @@ export default class Hyderbad extends Component {
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
+                            </PinchZoomView>
+
                     <Text style={{ fontSize: 30, fontWeight: "bold", padding: 10, color: "red" }}>
                         Location
           </Text>
+          <PinchZoomView>
+
                     <Image source={require('../../img/HydLoc1.jpg')} style={{
                         alignSelf: 'center', height: 350,
                         width: Dimensions.get('window').width
@@ -133,6 +140,9 @@ export default class Hyderbad extends Component {
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
+                            </PinchZoomView>
+                            <PinchZoomView>
+
                     <Image source={require('../../img/HydLoc2.jpg')} style={{
                         alignSelf: 'center', height: 350,
                         width: Dimensions.get('window').width
@@ -141,6 +151,7 @@ export default class Hyderbad extends Component {
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
+        </PinchZoomView>
 
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "white" }}>
                         PATANCHERU-SHANKARAPALLI ROAD – NH 9- TOWARDS MUMBAI
@@ -148,6 +159,8 @@ export default class Hyderbad extends Component {
                     <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
                         21 kms – to site from Gachibowli
                     </Text>
+                    <PinchZoomView>
+
                     <Image source={require('../../img/HydLoc3.jpg')} style={{
                         alignSelf: 'center', height: 350,
                         width: Dimensions.get('window').width
@@ -156,9 +169,13 @@ export default class Hyderbad extends Component {
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
+                            </PinchZoomView>
+
                    <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
                         7 kms – to site from ORR – NH9
                     </Text>
+                    <PinchZoomView>
+
                     <Image source={require('../../img/HydLoc4.jpg')} style={{
                         alignSelf: 'center', height: 350,
                         width: Dimensions.get('window').width
@@ -167,7 +184,8 @@ export default class Hyderbad extends Component {
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
-                   
+                           </PinchZoomView>
+
 
                     <Text style={{ fontSize: 30, fontWeight: "bold", color: "red" }}>Current work progress at site</Text>
                     <Image source={require('../../img/file1.jpeg')} style={{

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, ScrollView, Image, ActivityIndicator, Dimensions } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import PinchZoomView from 'react-native-pinch-zoom-view';
 
 export default class Farrukhnagar extends Component {
     constructor(props) {
@@ -15,7 +16,7 @@ export default class Farrukhnagar extends Component {
                 backgroundColor: 'white',
                 elevation: null
             },
-            title: "All Cargo Logistics",
+            title: "All Cargo Logistics (NCR)",
             headerLeft: (
                 <View style={{ padding: 10 }}>
                     <Ionicons name="md-menu" size={34} onPress={() => navigation.openDrawer()} />
@@ -100,6 +101,7 @@ export default class Farrukhnagar extends Component {
                     <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
                         The park covers an area of 185 acres in total with 40 lac sqft of built-up area. The location of the park is on Gurgaon-Jhajjar Road, 4.4 km from Farrukhnagar and 26 km from Gurgaon and is ideally located for the distribution in the northern region of India. There are a number of large industrial areas in close proximity to the site and enjoys seamless connectivity to the neighboring states of Uttar Pradesh, Himachal-Pradesh, Punjab and Rajasthan.
                </Text>
+               <PinchZoomView>
 
                     <Image source={require('../../img/ncrsiteadv.jpg')} style={{
                         alignSelf: 'center', height: 250,
@@ -110,11 +112,14 @@ export default class Farrukhnagar extends Component {
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
 
+        </PinchZoomView>
 
 
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 15, color: "red" }}>
                         Site Location:
                 </Text>
+                <PinchZoomView>
+
                     <Image source={require('../../img/ncrsitelocation.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
@@ -124,9 +129,13 @@ export default class Farrukhnagar extends Component {
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
 
+        </PinchZoomView>
 
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}>
-                        Layout               </Text>
+                        Layout               
+                        </Text>
+                        <PinchZoomView>
+
                     <Image source={require('../../img/ncrlayout.jpg')} style={{
                         alignSelf: 'center', height: 350,
                         width: Dimensions.get('window').width
@@ -136,6 +145,7 @@ export default class Farrukhnagar extends Component {
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
 
+        </PinchZoomView>
 
 
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}>

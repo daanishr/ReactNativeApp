@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, ScrollView, Image, ActivityIndicator, Dimensions } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import PinchZoomView from 'react-native-pinch-zoom-view';
 
 export default class Nagpur extends Component {
 
@@ -17,7 +18,7 @@ export default class Nagpur extends Component {
         backgroundColor: 'white',
         elevation: null
       },
-      title: "All Cargo Logistics",
+      title: "All Cargo Logistics (Nagpur)",
       headerLeft: (
         <View style={{ padding: 10 }}>
           <Ionicons name="md-menu" size={34} onPress={() => navigation.openDrawer()} />
@@ -40,17 +41,6 @@ export default class Nagpur extends Component {
           <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
       
           •  Total Land Area – 60 acres
-
-
-
-
-
-
-
-
-
-Google coordinates - 20.857689, 78.97522
-
                    </Text>
           <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
             • Type of Usage- Warehousing & Industrial
@@ -65,29 +55,12 @@ Google coordinates - 20.857689, 78.97522
 
             • Location – opposite to Borkhedi Railway Station
                    </Text>
-          <Image source={require('../../img/hosurbuilding.jpg')} style={{
-            alignSelf: 'center', height: 250,
-            width: Dimensions.get('window').width
-          }} resizeMode="contain"
-            defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-            onLoadStart={(e) => this.setState({ loading: true })}
-            onLoadEnd={(e) => this.setState({ loading: false })}
-          />
-
+        
           <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}> Site Location
         </Text>
-          <Image source={require('../../img/hosurmap.jpg')} style={{
-            alignSelf: 'center', height: 250,
-            width: Dimensions.get('window').width
-          }} resizeMode="contain"
-            defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
-            onLoadStart={(e) => this.setState({ loading: true })}
-            onLoadEnd={(e) => this.setState({ loading: false })}
-          />
+        <PinchZoomView>
 
-          <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}> Layout
-        </Text>
-          <Image source={require('../../img/hosurlayout.jpg')} style={{
+          <Image source={require('../../img/nagpurMap.jpg')} style={{
             alignSelf: 'center', height: 250,
             width: Dimensions.get('window').width
           }} resizeMode="contain"
@@ -95,6 +68,36 @@ Google coordinates - 20.857689, 78.97522
             onLoadStart={(e) => this.setState({ loading: true })}
             onLoadEnd={(e) => this.setState({ loading: false })}
           />
+          </PinchZoomView>
+
+          <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}> Clients
+        </Text>
+        <PinchZoomView>
+
+          <Image source={require('../../img/clientsNagpur.jpg')} style={{
+            alignSelf: 'center', height: 250,
+            width: Dimensions.get('window').width
+          }} resizeMode="contain"
+            defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
+            onLoadStart={(e) => this.setState({ loading: true })}
+            onLoadEnd={(e) => this.setState({ loading: false })}
+          />
+        </PinchZoomView>
+
+             <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}> Layout
+        </Text>
+        <PinchZoomView>
+
+          <Image source={require('../../img/LayoutNagpur.jpg')} style={{
+            alignSelf: 'center', height: 250,
+            width: Dimensions.get('window').width
+          }} resizeMode="contain"
+            defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
+            onLoadStart={(e) => this.setState({ loading: true })}
+            onLoadEnd={(e) => this.setState({ loading: false })}
+          />
+        </PinchZoomView>
+
         </ScrollView>
       </View>
     )

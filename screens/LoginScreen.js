@@ -61,7 +61,7 @@ class LoginScreen extends Component {
                         borderTopLeftRadius:15,
                         borderTopRightRadius: 15,
                         borderBottomRightRadius:15,
-                        borderBottomLeftRadius:15, borderColor: 'grey', padding: 10,backgroundColor: 'white', color: "black", borderWidth: 1, marginBottom: 20 }}
+                        borderBottomLeftRadius:15, borderColor: 'white', padding: 10,backgroundColor: 'white', color: "black", borderWidth: 1, marginBottom: 20 }}
                     onChangeText={(companyName) => this.setState({ companyName })}
                     value={this.state.companyName}
                     placeholder="Enter Company Name"

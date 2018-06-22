@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View, Image, ScrollView, Dimensions } from 'react-native'
+import { Text, StyleSheet, View,Button, Image, ScrollView, Dimensions } from 'react-native'
+import PinchZoomView from 'react-native-pinch-zoom-view';
+import Bangalore from '../Sites/Bangalore';
 
 
 export default class ScreenOne extends Component {
@@ -39,13 +41,20 @@ export default class ScreenOne extends Component {
             alignSelf: 'center', width: Dimensions.get('window').width - 20,
             height: 350, marginBottom: 10
           }} resizeMode="contain" />
+          
           <Text style={{ fontSize: 20, fontWeight: "bold", color: "red", padding: 10 }}>
             TECHNICAL SPECIFICATIONS OF THE PARKS
           </Text>
+          <PinchZoomView>
+
           <Image source={require('../../img/technicalSpecs.png')} style={{
             alignSelf: 'center', width: Dimensions.get('window').width - 20,
             height: 300, marginBottom: 10
           }} resizeMode="contain" />
+            </PinchZoomView>
+
+       
+
           <Text style={{ fontSize: 20, fontWeight: "bold", color: "red", padding: 10 }}>
             CLOSURES FROM TOP 500
           </Text>
