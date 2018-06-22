@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, ScrollView, Image, ActivityIndicator, Dimensions } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import PinchZoomView from 'react-native-pinch-zoom-view';
 
 export default class Hosur extends Component {
 
@@ -64,6 +65,7 @@ export default class Hosur extends Component {
 
           <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}> Site Location
         </Text>
+          <PinchZoomView>
           <Image source={require('../../img/hosurmap.jpg')} style={{
             alignSelf: 'center', height: 250,
             width: Dimensions.get('window').width
@@ -72,6 +74,7 @@ export default class Hosur extends Component {
             onLoadStart={(e) => this.setState({ loading: true })}
             onLoadEnd={(e) => this.setState({ loading: false })}
           />
+          <PinchZoomView>
 
           <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}> Layout
         </Text>
