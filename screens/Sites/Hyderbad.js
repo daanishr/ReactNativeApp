@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View, ScrollView,Image,ActivityIndicator, Dimensions } from 'react-native'
+import { Text, StyleSheet, View, ScrollView, Image, ActivityIndicator, Dimensions } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default class Hyderbad extends Component {
@@ -13,7 +13,7 @@ export default class Hyderbad extends Component {
     static navigationOptions = ({ navigation }) => {
         return {
             headerStyle: {
-                backgroundColor: 'white', 
+                backgroundColor: 'white',
                 elevation: null
             },
             title: "All Cargo Logistics",
@@ -27,7 +27,7 @@ export default class Hyderbad extends Component {
     render() {
         return (
             <View style={styles.container}>
-             {this.state.loading ? <View style={[styles.container, styles.horizontal]}>
+                {this.state.loading ? <View style={[styles.container, styles.horizontal]}>
                     <ActivityIndicator size="large" color="red" />
                 </View> : null
                 }
@@ -91,7 +91,7 @@ export default class Hyderbad extends Component {
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
-                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}>Technical Advantage</Text>
+                    <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}>Technical Advantage</Text>
                     <Text style={{ fontSize: 20, padding: 10, color: "white" }}>
                         •	12.00 m eave height with Bare Galvalume standing seam roofing system & 4.00 m wide cantilever canopy on docking side.
           </Text>
@@ -123,7 +123,7 @@ export default class Hyderbad extends Component {
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
-                   
+
 
                     <Text style={{ fontSize: 30, fontWeight: "bold", color: "red" }}>Current work progress at site</Text>
                     <Image source={require('../../img/file1.jpeg')} style={{

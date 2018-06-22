@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View,Image, ScrollView, ActivityIndicator,Dimensions } from 'react-native'
+import { Text, StyleSheet, View, Image, ScrollView, ActivityIndicator, Dimensions } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default class Goa extends Component {
@@ -13,7 +13,7 @@ export default class Goa extends Component {
     static navigationOptions = ({ navigation }) => {
         return {
             headerStyle: {
-                backgroundColor: 'white', 
+                backgroundColor: 'white',
                 elevation: null
             },
             title: "All Cargo Logistics",
@@ -27,7 +27,7 @@ export default class Goa extends Component {
     render() {
         return (
             <View style={styles.container}>
-             {this.state.loading ? <View style={[styles.container, styles.horizontal]}>
+                {this.state.loading ? <View style={[styles.container, styles.horizontal]}>
                     <ActivityIndicator size="large" color="red" />
                 </View> : null
                 }
@@ -66,7 +66,7 @@ export default class Goa extends Component {
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
-                   />
+                    />
                     <Image source={require('../../img/goamap2.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
@@ -74,7 +74,7 @@ export default class Goa extends Component {
                         defaultSource={{ uri: require('../../img/Loading.png'), width: Dimensions.get('window').width, height: 200 }}
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
-                   />
+                    />
                     <Text style={{ fontSize: 20, fontWeight: "bold", padding: 10, color: "red" }}> Pictures of site
                     </Text>
                     <Image source={require('../../img/goa1.jpg')} style={{
