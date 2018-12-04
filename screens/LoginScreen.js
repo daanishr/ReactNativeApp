@@ -70,7 +70,7 @@ class LoginScreen extends Component {
                     style={{ height: 40, width: 170, borderColor: 'grey',         borderTopLeftRadius:15,
                     borderTopRightRadius: 15,
                     borderBottomRightRadius:15,
-                    borderBottomLeftRadius:15, borderpadding: 10,
+                    borderBottomLeftRadius:15, 
                     padding: 10,
                     backgroundColor: 'white', color: "black", borderWidth: 1, marginBottom: 20 }}
                     onChangeText={(email) => this.setState({ email })}
@@ -99,7 +99,7 @@ class LoginScreen extends Component {
                 <Image resizeMode="contain" style={{
                     alignSelf: 'center', width: Dimensions.get('window').width - 100,
                     height: 100, margin:20
-                }} source={require('../img/Logo.png')} />
+                }} source={require('../img/logo.png')} />
             </View> 
    
         );

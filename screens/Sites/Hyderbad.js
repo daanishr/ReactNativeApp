@@ -83,7 +83,7 @@ export default class Hyderbad extends Component {
                         onLoadStart={(e) => this.setState({ loading: true })}
                         onLoadEnd={(e) => this.setState({ loading: false })}
                     />
-                    <Image source={require('../../img/hyder.jpg')} style={{
+                    <Image source={require('../../img/Hyder.jpg')} style={{
                         alignSelf: 'center', height: 250,
                         width: Dimensions.get('window').width
                     }} resizeMode="contain"
